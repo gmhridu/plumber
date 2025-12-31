@@ -107,7 +107,7 @@ export default function ServicePage({
 
       <main className="min-h-screen bg-gray-50">
         {/* H1 & Hero Section - Above the fold */}
-        <section className="relative bg-gradient-to-b from-green-700 to-green-600 text-white py-20 px-4">
+        <section className="relative bg-gradient-to-b from-green-700 to-green-600 text-white py-16 md:py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
               {title}
@@ -136,7 +136,7 @@ export default function ServicePage({
           </div>
         </section>
 
-        <div className="max-w-4xl mx-auto px-4 py-12">
+        <div className="max-w-4xl mx-auto px-4 py-8 md:py-12">
           {/* H2 - Service Details */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-6 text-gray-800">Nos Services de {serviceType}</h2>

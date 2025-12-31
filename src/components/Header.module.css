@@ -59,7 +59,37 @@
   .logo span {
     display: none;
   }
-  .phoneLink {
+  .phoneLabel {
     display: none;
+  }
+  /* On mobile, we keep the phone number visible but smaller */
+  .phoneLink {
+    display: flex;
+    margin-right: 8px;
+  }
+  .phoneNumber {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.1rem; /* Slightly smaller to fit button */
+  }
+  .ctaContainer {
+    gap: 8px;
+    flex-direction: row; /* Force row layout */
+    align-items: center;
+  }
+  .phoneLink {
+    display: none; /* Hide separate phone number on small screens to save space */
+  }
+
+  /* Ensure Appeler button is compact but visible */
+  :global(.btn) {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    min-height: 40px;
   }
 }

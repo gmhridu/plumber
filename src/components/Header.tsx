@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -5,7 +6,14 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.nav}`}>
         <div className={styles.logo}>
-          Urgence<span>Plomb</span>
+          <Image
+            src="/urgence.png"
+            alt="Urgence Plombier"
+            width={120}
+            height={40}
+            style={{ width: 'auto', height: '80px' }}
+            priority
+          />
         </div>
 
         <div className={styles.ctaContainer}>

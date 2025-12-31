@@ -13,12 +13,12 @@ export default function Hero() {
       <div className={`container ${styles.content}`}>
         <div className={`${styles.badge} animate-fade-in`}>Intervention immédiate 24/7</div>
         <h1 className={`${styles.title} animate-fade-in`} style={{ animationDelay: '0.2s' }}>
-          Plombier d&apos;Urgence à Paris – Intervention 24/7
+          Plombier d&apos;Urgence à Paris – Intervention en 30 min
         </h1>
         <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
-          Fuite d&apos;eau, canalisation bouchée, chauffe-eau en panne ?
+          Une fuite d&apos;eau, une canalisation bouchée ou un chauffe-eau en panne ?
           <br />
-          Un plombier qualifié chez vous en moins de 30 min.
+          Nos artisans plombiers interviennent à Paris et en Île-de-France, jours fériés inclus.
         </p>
         <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.6s' }}>
           <a href="tel:0620202084" className="btn btn-primary" style={{ fontSize: '1.25rem', padding: '16px 32px' }}>

@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 
@@ -11,6 +12,14 @@ import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
 import Process from '@/components/Process';
 import FAQ from '@/components/FAQ';
+
+export const metadata: Metadata = {
+  title: 'Plombier Paris Urgence - Intervention Fuite d\'Eau en 30 min',
+  description: 'Besoin d\'un plombier à Paris ? Intervention d\'urgence 24/7 pour fuite d\'eau, débouchage de canalisation et chauffe-eau. Arrivée en moins de 30 minutes.',
+  alternates: {
+    canonical: 'https://www.urgenceplomb.com',
+  },
+};
 
 export default function Home() {
   const localBusinessSchema = {

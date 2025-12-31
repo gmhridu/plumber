@@ -106,6 +106,41 @@ button {
   gap: 0.5rem;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  white-space: normal; /* Allow text wrapping */
+  line-height: 1.2;
+  height: auto;
+  min-height: 48px;
+}
+
+/* Reduce section padding on mobile */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 20px 0;
+  }
+  h2 {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Reduce button padding on very small screens */
+@media (max-width: 370px) {
+  .btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
 }
 
 .btn-primary {

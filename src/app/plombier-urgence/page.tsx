@@ -4,6 +4,9 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Urgence Plombier Paris - Intervention Immédiate 24/7',
   description: 'Besoin d\'un plombier en urgence à Paris ? Arrivée en 30 minutes. Disponible 24h/24 et 7j/7 pour tout dépannage plomberie.',
+  alternates: {
+    canonical: 'https://www.urgenceplomb.com/plombier-urgence',
+  },
 };
 
 export default function EmergencyPlumberPage() {
