@@ -2,16 +2,16 @@ import styles from './Features.module.css';
 
 const features = [
   {
-    title: 'Disponibilité 24/7',
-    description: 'Une urgence n’attend pas. Nous sommes disponibles nuit et jour, dimanches et jours fériés.',
+    title: 'Intervention Rapide',
+    description: 'Une urgence n’attend pas. Arrivée en moins de 30 minutes, 24h/24 et 7j/7.',
   },
   {
     title: 'Tarifs Transparents',
-    description: 'Devis clair et détaillé avant toute intervention. Pas de surprise sur la facture.',
+    description: 'Pas de surprise : devis annoncé avant intervention. Prix fixes et agréés assurances.',
   },
   {
-    title: 'Artisans Qualifiés',
-    description: 'Nos plombiers sont certifiés et expérimentés pour garantir un travail de qualité.',
+    title: 'Plombiers Qualifiés',
+    description: 'Artisans professionnels et expérimentés. Travail soigné et garanti.',
   },
 ];
 

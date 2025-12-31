@@ -2,11 +2,13 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--bg-color);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent */
+  backdrop-filter: blur(10px); /* Glassmorphism */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Modern, softer shadow */
   height: var(--header-height);
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .nav {

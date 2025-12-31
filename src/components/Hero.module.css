@@ -1,40 +1,48 @@
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")
-      no-repeat center center/cover;
-  padding: 100px 0;
+  /* Image is set inline for easy customization */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding: 140px 0; /* More breathing room */
   color: white;
   text-align: center;
+  min-height: 80vh; /* Robust height */
+  display: flex;
+  align-items: center;
 }
 
 .content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Better readability */
 }
 
 .badge {
   background-color: var(--primary-color);
   color: white;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 8px 16px;
+  border-radius: 50px; /* Modern pill shape */
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
 }
 
 .title {
-  font-size: 3rem;
+  font-size: clamp(2.2rem, 5vw, 3.5rem); /* Fluid sizing */
   font-weight: 800;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 40px;
-  opacity: 0.9;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  margin-bottom: 48px;
+  opacity: 0.95;
+  font-weight: 500;
 }
 
 .actions {
@@ -45,18 +53,49 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 0;
+    padding: 100px 0;
+    min-height: 600px; /* Ensure tall enough on mobile */
+    background-position: center top; /* Focus on faces usually at top */
   }
   .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    padding: 0 10px;
   }
   .actions {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 0 20px;
   }
   .actions button,
   .actions a {
     width: 100%;
-    max-width: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    padding: 120px 0;
+    min-height: 70vh;
+  }
+  .title {
+    font-size: clamp(2.5rem, 4vw, 3rem);
+  }
+  .subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    background-attachment: fixed;
+    min-height: 90vh;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
   }
 }

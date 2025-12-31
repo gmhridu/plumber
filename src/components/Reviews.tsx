@@ -2,18 +2,18 @@ import styles from './Reviews.module.css';
 
 const reviews = [
   {
-    author: 'Jean Dupont',
-    text: 'Intervention rapide en pleine nuit pour une fuite importante. Plombier très professionnel et courtois.',
+    author: 'Lucas Bernard',
+    text: 'Fuite sous évier réparée en 20 minutes chrono. Le technicien avait la pièce dans son camion. Efficacité redoutable.',
     stars: 5,
   },
   {
-    author: 'Marie Martin',
-    text: 'Prix annoncé à l’avance et respecté. Le travail est propre. Je recommande vivement !',
+    author: 'Sarah M.',
+    text: 'J’ai appelé à 2h du matin pour une inondation. Ils sont vraiment venus tout de suite. Merci infiniment !',
     stars: 5,
   },
   {
-    author: 'Pierre Durand',
-    text: 'Sauvé un dimanche matin ! Débouchage efficace en moins de 30 minutes.',
+    author: 'M. Petit',
+    text: 'Facture conforme au devis téléphonique. C’est rare de trouver un plombier honnête à Paris. Je garde le numéro.',
     stars: 5,
   },
 ];

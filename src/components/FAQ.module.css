@@ -1,0 +1,35 @@
+.section {
+  padding: 60px 0;
+  background-color: var(--gray-light);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  margin-bottom: 1rem;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.question {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.answer {
+  color: #555;
+  line-height: 1.6;
+}

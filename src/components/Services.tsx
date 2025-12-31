@@ -2,23 +2,23 @@ import styles from './Services.module.css';
 
 const services = [
   {
-    title: 'Recherche de Fuite',
-    description: 'Détection et réparation rapide de fuites d\'eau visibles ou encastrées.',
+    title: 'Fuite d’eau Urgente',
+    description: 'Arrêt immédiat de fuite d\'eau. Réparation sur tuyauterie cuivre, PER, multicouche.',
     icon: '💧',
   },
   {
-    title: 'Débouchage',
-    description: 'WC, évier, douche ou canalisation bouchée ? Intervention express.',
+    title: 'Débouchage Canalisation',
+    description: 'Intervention haute pression pour déboucher WC, évier, douche et colonne générale.',
     icon: '🚽',
   },
   {
-    title: 'Chauffe-eau',
-    description: 'Réparation, détartrage et remplacement de chauffe-eau et cumulus.',
+    title: 'Chauffe-eau en Panne',
+    description: 'Dépannage rapide de ballon d\'eau chaude et chaudière. Remplacement thermostat et résistance.',
     icon: '🔥',
   },
   {
-    title: 'Robinetterie',
-    description: 'Remplacement de joint, installation de mitigeur et réparation.',
+    title: 'WC et Sanitaires',
+    description: 'Réparation de chasse d\'eau, remplacement de robinetterie et joint d\'étanchéité.',
     icon: '🔧',
   },
 ];

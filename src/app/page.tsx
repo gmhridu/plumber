@@ -5,25 +5,29 @@ import Services from '@/components/Services';
 import Reviews from '@/components/Reviews';
 import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
+import Process from '@/components/Process';
+import FAQ from '@/components/FAQ';
 
 export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Plumber',
-    name: 'Plombier Urgence',
-    image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    description: 'Service de dépannage plomberie d\'urgence 24h/24 et 7j/7. Intervention rapide en 30 minutes pour fuite d\'eau, débouchage et chauffe-eau.',
+    name: 'Plombier Express',
+    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80',
+    description: 'Service de dépannage plomberie d\'urgence 24h/24 et 7j/7 en Île-de-France. Intervention en 30 minutes pour fuite, débouchage et chauffe-eau.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '123 Rue de la République',
       addressLocality: 'Paris',
-      postalCode: '75001',
+      addressRegion: 'IDF',
       addressCountry: 'FR'
     },
-    telephone: '+33123456789',
+    telephone: '+33620202084',
+    email: 'Bats.services19@gmail.com',
     openingHours: 'Mo-Su 00:00-24:00',
-    priceRange: '€€',
-    areaServed: 'Paris'
+    priceRange: '€',
+    areaServed: 'Île-de-France',
+    currenciesAccepted: 'EUR',
+    paymentAccepted: 'Cash, Credit Card'
   };
 
   return (
@@ -37,7 +41,9 @@ export default function Home() {
         <Hero />
         <Features />
         <Services />
+        <Process />
         <Reviews />
+        <FAQ />
         <Footer />
         <StickyCTA />
       </main>
