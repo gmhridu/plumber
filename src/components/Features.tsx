@@ -1,3 +1,4 @@
+import { CheckCircle } from 'lucide-react';
 import styles from './Features.module.css';
 
 const features = [
@@ -21,7 +22,7 @@ export default function Features() {
       <div className={`container ${styles.container}`}>
         {features.map((feature, index) => (
           <div key={index} className={styles.feature}>
-            <span className={styles.check}>✓</span>
+            <CheckCircle className={styles.check} size={24} />
             <h3 className={styles.title}>{feature.title}</h3>
             <p className={styles.description}>{feature.description}</p>
           </div>

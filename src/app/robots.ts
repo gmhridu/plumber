@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://plombier-urgence.fr/sitemap.xml",
+    sitemap: "https://www.urgenceplomb.com/sitemap.xml",
   };
 }

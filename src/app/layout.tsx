@@ -9,13 +9,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Urgence Plombier Paris & IDF - Intervention 24/7 en 30 min',
-  description: 'Plombier urgence Paris & Île-de-France. Dépannage fuite d\'eau, débouchage WC, chauffe-eau. Disponible 24h/24 et 7j/7. Arrivée en 30 min. Devis gratuit.',
+  title: 'Urgence Plombier Paris & IDF - Intervention 24h/24 et 7j/7',
+  description: 'Plombier d\'urgence à Paris et Île-de-France. Intervention en 30 minutes pour fuite d\'eau, débouchage et dépannage chauffe-eau. Disponible 24/7. Devis gratuit.',
+  metadataBase: new URL('https://www.urgenceplomb.com'),
   openGraph: {
-    title: 'Urgence Plombier Paris & IDF - Dépannage Rapide',
-    description: 'Besoin d\'un plombier maintenant ? Appelez le 06 20 20 20 84. Intervention immédiate pour fuite et débouchage.',
+    title: 'Urgence Plombier Paris & IDF - Intervention 24h/24 et 7j/7',
+    description: 'Besoin d\'un plombier en urgence ? Arrivée en 30 min sur Paris et IDF. Fuite, débouchage, réparation. Service 24/7.',
     locale: 'fr_FR',
     type: 'website',
+    url: 'https://www.urgenceplomb.com',
+    siteName: 'Urgence Plomb',
   },
 };
 

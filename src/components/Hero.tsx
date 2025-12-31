@@ -13,8 +13,7 @@ export default function Hero() {
       <div className={`container ${styles.content}`}>
         <div className={`${styles.badge} animate-fade-in`}>Intervention immédiate 24/7</div>
         <h1 className={`${styles.title} animate-fade-in`} style={{ animationDelay: '0.2s' }}>
-          Urgence Plomberie :<br />
-          Intervention en 30 Minutes
+          Plombier d&apos;Urgence à Paris – Intervention 24/7
         </h1>
         <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
           Fuite d&apos;eau, canalisation bouchée, chauffe-eau en panne ?

@@ -5,7 +5,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.nav}`}>
         <div className={styles.logo}>
-          Plombier<span>Express</span>
+          Urgence<span>Plomb</span>
         </div>
 
         <div className={styles.ctaContainer}>

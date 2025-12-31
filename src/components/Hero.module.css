@@ -1,101 +1,133 @@
 .hero {
-  /* Image is set inline for easy customization */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  padding: 140px 0; /* More breathing room */
+  position: relative;
+  /* Dark modern gradient overlay */
+  background: linear-gradient(135deg, var(--text-color) 0%, #0f172a 100%);
+  padding: 160px 0 100px;
   color: white;
   text-align: center;
-  min-height: 80vh; /* Robust height */
+  min-height: 85vh;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+/* Subtle background pattern/glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(5, 150, 105, 0.15) 0%,
+    transparent 50%
+  );
+  animation: rotate 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .content {
-  max-width: 900px;
+  position: relative;
+  z-index: 10;
+  max-width: 1000px;
   margin: 0 auto;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Better readability */
 }
 
 .badge {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 8px 16px;
-  border-radius: 50px; /* Modern pill shape */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #4ade80; /* Brighter green for dark bg */
+  padding: 10px 24px;
+  border-radius: 9999px;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
   display: inline-block;
-  margin-bottom: 24px;
-  box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
+  margin-bottom: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.6s ease-out;
 }
 
 .title {
-  font-size: clamp(2.2rem, 5vw, 3.5rem); /* Fluid sizing */
-  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
   margin-bottom: 24px;
   line-height: 1.1;
   letter-spacing: -0.02em;
+  background: linear-gradient(to right, #ffffff, #e2e8f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
 
 .subtitle {
-  font-size: clamp(1.1rem, 3vw, 1.4rem);
-  margin-bottom: 48px;
-  opacity: 0.95;
-  font-weight: 500;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  margin-bottom: 56px;
+  color: #cbd5e1; /* Slate 300 */
+  font-weight: 400;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
 }
 
 .actions {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 100px 0;
-    min-height: 600px; /* Ensure tall enough on mobile */
-    background-position: center top; /* Focus on faces usually at top */
+    padding: 120px 20px 80px;
+    min-height: auto;
   }
-  .title {
-    font-size: 2.2rem;
-  }
-  .subtitle {
-    font-size: 1.1rem;
-    padding: 0 10px;
-  }
+
   .actions {
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    padding: 0 20px;
+    gap: 16px;
   }
+
   .actions button,
   .actions a {
     width: 100%;
-  }
-}
-@media (max-width: 1024px) {
-  .hero {
-    padding: 120px 0;
-    min-height: 70vh;
-  }
-  .title {
-    font-size: clamp(2.5rem, 4vw, 3rem);
-  }
-  .subtitle {
-    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
-  }
-}
-@media (min-width: 1440px) {
-  .hero {
-    background-attachment: fixed;
-    min-height: 90vh;
-  }
-  .title {
-    font-size: 4rem;
-  }
-  .subtitle {
-    font-size: 1.6rem;
   }
 }

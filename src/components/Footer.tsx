@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={`container ${styles.copyright}`}>
-        &copy; {new Date().getFullYear()} Plombier Express. Tous droits réservés.
+        &copy; {new Date().getFullYear()} Urgence Plomb. Tous droits réservés.
       </div>
     </footer>
   );
