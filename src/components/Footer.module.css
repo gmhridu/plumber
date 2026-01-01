@@ -1,52 +1,105 @@
 .footer {
-  background-color: #333;
+  background-color: var(--bg-dark);
   color: white;
-  padding: 40px 0;
+  padding: var(--space-20) 0 var(--space-8);
   margin-top: auto;
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-12);
+  margin-bottom: var(--space-16);
 }
 
 .column {
-  flex: 1;
-  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoContainer {
+  margin-bottom: var(--space-6);
+  background: white;
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  display: inline-block;
+  width: fit-content;
 }
 
 .title {
   color: white;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+  position: relative;
+  padding-bottom: var(--space-3);
+  font-family: var(--font-heading);
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: var(--radius-full);
 }
 
 .text {
-  color: #ccc;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
+  color: var(--text-on-dark);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: var(--space-3);
+}
+
+.text a {
+  color: white;
+  font-weight: 700;
 }
 
 .link {
-  color: #ccc;
+  color: var(--text-on-dark);
   text-decoration: none;
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-3);
+  opacity: 0.8;
+  transition: all var(--transition-base);
   display: block;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
 }
 
 .link:hover {
+  opacity: 1;
   color: white;
-  text-decoration: underline;
+  transform: translateX(5px);
 }
 
 .copyright {
   text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #444;
-  padding-top: 20px;
-  color: #888;
-  font-size: 0.8rem;
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--space-12) 0 var(--space-6);
+  }
+
+  .content {
+    gap: var(--space-10);
+  }
+
+  .column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

@@ -1,48 +1,99 @@
 .section {
-  padding: 80px 0;
-  background-color: var(--bg-color);
+  padding: var(--space-20) 0;
+  background-color: var(--bg-secondary);
 }
 
 .title {
   text-align: center;
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  margin-bottom: 50px;
+  margin-bottom: var(--space-16);
   color: var(--text-color);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-8);
 }
 
 .card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--bg-card);
+  padding: var(--space-10);
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-base);
   text-align: center;
+  box-shadow: var(--shadow-md);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-xl);
 }
 
 .icon {
   color: var(--primary-color);
-  margin: 0 auto 20px;
-  display: block;
+  margin-bottom: var(--space-6);
+  background: var(--primary-light);
+  padding: var(--space-4);
+  border-radius: var(--radius-xl);
+  display: inline-flex;
+  width: 72px;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.card:hover .icon {
+  transform: scale(1.1) rotate(-5deg);
+  background: var(--primary-color);
+  color: white;
 }
 
 .cardTitle {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--secondary-color);
+  margin-bottom: var(--space-4);
 }
 
 .cardText {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-12) 0;
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+    padding: var(--space-3);
+  }
+
+  .icon svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .icon svg {
+    width: 28px;
+    height: 28px;
+  }
 }

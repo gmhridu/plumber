@@ -1,0 +1,104 @@
+.wrapper {
+  background-color: var(--bg-color);
+}
+
+.hero {
+  padding: var(--space-16) 0;
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--secondary-hover)
+  );
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  color: white;
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-on-dark);
+  max-width: 800px;
+  margin: 0 auto var(--space-8);
+  opacity: 0.9;
+}
+
+.ctaBox {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.details {
+  padding: var(--space-16) 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-10);
+}
+
+.content h2 {
+  margin-bottom: var(--space-6);
+  color: var(--secondary-color);
+}
+
+.content p {
+  margin-bottom: var(--space-6);
+}
+
+.content ul {
+  list-style: none;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.content li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.trustCard {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.trustCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-4);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: -1;
+  }
+}

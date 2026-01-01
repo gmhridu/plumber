@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-
+import EmergencyBanner from '@/components/EmergencyBanner';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Services from '@/components/Services';
 import EmergencyTips from '@/components/EmergencyTips';
@@ -12,13 +12,16 @@ import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
 import Process from '@/components/Process';
 import FAQ from '@/components/FAQ';
+import TrustBadges from '@/components/TrustBadges';
+import ServiceAreas from '@/components/ServiceAreas';
 
 export const metadata: Metadata = {
-  title: 'Plombier Paris Urgence - Intervention Fuite d\'Eau en 30 min',
-  description: 'Besoin d\'un plombier à Paris ? Intervention d\'urgence 24/7 pour fuite d\'eau, débouchage de canalisation et chauffe-eau. Arrivée en moins de 30 minutes.',
+  title: 'Plombier d\'Urgence Paris 15 - Intervention Fuite d\'Eau en 30 min | 24/7',
+  description: 'Plombier d\'urgence à Paris 15, 16, 17. Intervention rapide en 30 min pour fuite d\'eau, débouchage canalisation, chauffe-eau. Disponible 24/7, devis gratuit.',
   alternates: {
     canonical: 'https://www.urgenceplomb.com',
   },
+  keywords: 'plombier urgence Paris 15, plombier Paris 16, fuite eau Paris, débouchage toilette, plombier 24/7, dépannage plomberie',
 };
 
 export default function Home() {
@@ -220,20 +223,24 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
+      <EmergencyBanner />
+      <Header />
       <main>
-        <Header />
         <Hero />
+        <TrustBadges />
         <Services />
         <Stats />
         <WhyChooseUs />
         <Process />
         <Reviews />
         <OurGuarantee />
+        <ServiceAreas />
         <EmergencyTips />
         <FAQ />
-        <Footer />
-        <StickyCTA />
       </main>
+      <Footer />
+      <StickyCTA />
     </>
   );
 }
+

@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -5,14 +7,38 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.content}`}>
         <div className={styles.column}>
-          <h3 className={styles.title}>Plombier Express</h3>
+          <div className={styles.logoContainer}>
+            <NextImage
+              src="/urgence-removebg-preview.png"
+              alt="Plombier d'Urgence"
+              width={140}
+              height={50}
+              style={{ width: 'auto', height: '40px', marginBottom: '0px' }}
+            />
+          </div>
           <p className={styles.text}>
-            Service de dépannage plomberie 24h/24 et 7j/7.
+            Service de dépannage plomberie d&apos;urgence 24h/24 et 7j/7.
             <br />
-            Intervention d&apos;urgence en 30 minutes.
-            <br />
-            Nuit, Week-end et Jours Fériés.
+            Intervention en 30 minutes à Paris et IDF.
           </p>
+        </div>
+
+        <div className={styles.column}>
+          <h3 className={styles.title}>Contact Urgence</h3>
+          <p className={styles.text}>
+            <strong>Tél : </strong>
+            <a href="tel:0620202084">06 20 20 20 84</a>
+          </p>
+          <p className={styles.text}>
+            <strong>Email : </strong>Bats.services19@gmail.com
+          </p>
+        </div>
+
+        <div className={styles.column}>
+          <h3 className={styles.title}>Nos Interventions</h3>
+          <Link href="/services/fuite-chauffe-eau-paris-15" className={styles.link}>Fuite Chauffe-Eau Paris 15</Link>
+          <Link href="/services/debouchage-toilette-levallois" className={styles.link}>Urgence WC Levallois</Link>
+          <Link href="/#zones" className={styles.link}>Zones de Service</Link>
         </div>
 
         <div className={styles.column}>

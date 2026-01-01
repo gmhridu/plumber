@@ -2,13 +2,13 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent */
-  backdrop-filter: blur(10px); /* Glassmorphism */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Modern, softer shadow */
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
   height: var(--header-height);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .nav {
@@ -18,78 +18,51 @@
   width: 100%;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--primary-color);
+.logoLink {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.logo span {
-  color: var(--text-color);
 }
 
 .ctaContainer {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: var(--space-6);
 }
 
 .phoneLink {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  color: var(--text-color);
-}
-
-.phoneNumber {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .phoneLabel {
-  font-size: 0.8rem;
-  color: #666;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.phoneNumber {
+  font-weight: 800;
+  font-size: 1.125rem;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
 }
 
 @media (max-width: 768px) {
-  .logo span {
-    display: none;
-  }
-  .phoneLabel {
-    display: none;
-  }
-  /* On mobile, we keep the phone number visible but smaller */
   .phoneLink {
-    display: flex;
-    margin-right: 8px;
+    display: none;
   }
-  .phoneNumber {
-    font-size: 1rem;
-    white-space: nowrap;
+
+  .ctaContainer {
+    gap: var(--space-3);
   }
 }
 
 @media (max-width: 480px) {
-  .logo {
-    font-size: 1.1rem; /* Slightly smaller to fit button */
-  }
-  .ctaContainer {
-    gap: 8px;
-    flex-direction: row; /* Force row layout */
-    align-items: center;
-  }
-  .phoneLink {
-    display: none; /* Hide separate phone number on small screens to save space */
-  }
-
-  /* Ensure Appeler button is compact but visible */
-  :global(.btn) {
-    padding: 10px 16px;
-    font-size: 0.9rem;
-    min-height: 40px;
+  .header {
+    height: 70px;
   }
 }

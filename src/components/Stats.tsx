@@ -9,8 +9,8 @@ const stats = [
   },
   {
     icon: Clock,
-    number: '30 min',
-    label: 'Temps Moyen d\'Intervention',
+    number: '<30 min',
+    label: 'Temps d\'Intervention',
   },
   {
     icon: Star,
@@ -19,8 +19,8 @@ const stats = [
   },
   {
     icon: MapPin,
-    number: 'Île-de-France',
-    label: 'Zone de Service',
+    number: '24/7',
+    label: 'Disponibilité',
   },
 ];
 
@@ -32,7 +32,7 @@ export default function Stats() {
         <div className={styles.grid}>
           {stats.map((stat, index) => (
             <div key={index} className={styles.stat}>
-              <stat.icon className={styles.icon} size={48} />
+              <stat.icon className={styles.icon} />
               <div className={styles.number}>{stat.number}</div>
               <div className={styles.label}>{stat.label}</div>
             </div>

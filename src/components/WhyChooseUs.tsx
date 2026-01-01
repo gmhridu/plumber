@@ -4,23 +4,23 @@ import styles from './WhyChooseUs.module.css';
 const benefits = [
   {
     icon: Clock,
-    title: '24/7 Disponible',
-    description: 'Service d\'urgence disponible tous les jours et toutes les nuits.',
+    title: '24/7 Emergency Plumber',
+    description: 'Service d\'urgence disponible tous les jours et toutes les nuits à Paris 15, 16, 17.',
   },
   {
     icon: Zap,
-    title: 'Intervention Rapide',
-    description: 'Arrivée sur site en moins de 30 minutes.',
+    title: 'Intervention 30 min',
+    description: 'Arrivée sur site ultra-rapide pour tout dépannage plomberie d\'urgence.',
   },
   {
     icon: Euro,
-    title: 'Tarifs Transparents',
-    description: 'Devis clair et prix fixes sans surprise.',
+    title: 'Prix Fixes & Devis',
+    description: 'Tarification transparente et devis gratuit avant chaque intervention.',
   },
   {
     icon: Award,
     title: 'Plombiers Certifiés',
-    description: 'Équipe de professionnels qualifiés et expérimentés.',
+    description: 'Artisans qualifiés pour garantir une réparation durable et aux normes.',
   },
 ];
 
@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
         <div className={styles.grid}>
           {benefits.map((benefit, index) => (
             <div key={index} className={styles.card}>
-              <benefit.icon className={styles.icon} size={48} />
+              <benefit.icon className={styles.icon} />
               <h3 className={styles.cardTitle}>{benefit.title}</h3>
               <p className={styles.cardText}>{benefit.description}</p>
             </div>

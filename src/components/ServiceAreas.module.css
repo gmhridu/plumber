@@ -1,0 +1,127 @@
+.section {
+  padding: var(--space-20) 0;
+  background-color: var(--bg-secondary);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.headerIcon {
+  color: var(--primary-color);
+  margin-bottom: var(--space-4);
+  width: 48px;
+  height: 48px;
+  transition: all var(--transition-base);
+}
+
+.headerIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+.card {
+  background: white;
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.featured {
+  border-color: var(--primary-color);
+  background: var(--primary-light);
+}
+
+.icon {
+  color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  transition: all var(--transition-base);
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.areaName {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.badge {
+  background: var(--primary-color);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+}
+
+.cta {
+  text-align: center;
+}
+
+.ctaText {
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-12) 0;
+  }
+
+  .headerIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .headerIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}

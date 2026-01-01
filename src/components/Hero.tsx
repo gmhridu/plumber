@@ -1,31 +1,43 @@
+import { Phone, Shield, Clock } from 'lucide-react';
 import styles from './Hero.module.css';
 
 export default function Hero() {
   return (
-    <section
-      className={styles.hero}
-      style={{
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/plumber.jpg")',
-        backgroundSize: 'contain',
-        backgroundPosition: 'center',
-      }}
-    >
+    <section className={styles.hero}>
       <div className={`container ${styles.content}`}>
-        <div className={`${styles.badge} animate-fade-in`}>Intervention immédiate 24/7</div>
+        <div className={`${styles.badge} animate-fade-in`}>
+          <Clock size={16} />
+          Intervention immédiate 24/7
+        </div>
         <h1 className={`${styles.title} animate-fade-in`} style={{ animationDelay: '0.2s' }}>
-          Plombier d&apos;Urgence à Paris – Intervention en 30 min
+          Plombier d&apos;Urgence Paris 15 – Intervention en 30 min
         </h1>
         <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
           Une fuite d&apos;eau, une canalisation bouchée ou un chauffe-eau en panne ?
           <br />
-          Nos artisans plombiers interviennent à Paris et en Île-de-France, jours fériés inclus.
+          Nos artisans plombiers certifiés interviennent à Paris 15, 16, 17 et toute l&apos;Île-de-France, jours fériés inclus.
         </p>
+        <div className={`${styles.trustIndicators} animate-fade-in`} style={{ animationDelay: '0.5s' }}>
+          <div className={styles.indicator}>
+            <Shield size={20} />
+            <span>Certifié & Assuré</span>
+          </div>
+          <div className={styles.indicator}>
+            <Clock size={20} />
+            <span>Disponible 24/7</span>
+          </div>
+        </div>
         <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.6s' }}>
-          <a href="tel:0620202084" className="btn btn-primary" style={{ fontSize: '1.25rem', padding: '16px 32px' }}>
+          <a href="tel:0620202084" className="btn btn-primary" style={{ fontSize: '1.25rem', padding: '18px 36px' }}>
+            <Phone size={24} />
             Appelez maintenant - 06 20 20 20 84
+          </a>
+          <a href="#services" className="btn btn-secondary" style={{ fontSize: '1.125rem' }}>
+            Voir nos services
           </a>
         </div>
       </div>
     </section>
   );
 }
+

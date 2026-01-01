@@ -32,7 +32,7 @@ export default function Services() {
         <div className={styles.grid}>
           {services.map((service, index) => (
             <div key={index} className={styles.card}>
-              <service.icon className={styles.icon} size={48} />
+              <service.icon className={styles.icon} />
               <h3 className={styles.cardTitle}>{service.title}</h3>
               <p className={styles.cardText}>{service.description}</p>
             </div>

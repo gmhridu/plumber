@@ -1,183 +1,133 @@
 .hero {
   position: relative;
-  /* Dark modern gradient overlay */
-  /* Dark modern gradient overlay - increased opacity for mobile readability */
-  background: linear-gradient(
-    135deg,
-    rgba(15, 23, 42, 0.9) 0%,
-    rgba(15, 23, 42, 0.95) 100%
-  );
-  padding: 120px 0 80px;
+  background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)),
+    url("/plumber.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0 100px;
   color: white;
-  text-align: center;
-  min-height: 85vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    /* Slightly more transparent on desktop where screen is larger */
-    background: linear-gradient(
-      135deg,
-      rgba(15, 23, 42, 0.85) 0%,
-      #0f172a 100%
-    );
-    padding: 160px 0 100px;
-  }
-}
-
-/* Subtle background pattern/glow */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(
-    circle at center,
-    rgba(5, 150, 105, 0.15) 0%,
-    transparent 50%
-  );
-  animation: rotate 20s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .content {
   position: relative;
   z-index: 10;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .badge {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #4ade80; /* Brighter green for dark bg */
-  padding: 10px 24px;
-  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: hsla(var(--primary-hue), 84%, 39%, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid hsla(var(--primary-hue), 84%, 39%, 0.3);
+  color: var(--primary-color);
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--radius-full);
   font-weight: 700;
-  text-transform: uppercase;
+  font-family: var(--font-heading);
   font-size: 0.875rem;
+  margin-bottom: var(--space-8);
+  text-transform: uppercase;
   letter-spacing: 0.05em;
-  display: inline-block;
-  margin-bottom: 32px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  animation: slideDown 0.6s ease-out;
 }
 
 .title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 900;
-  margin-bottom: 24px;
   line-height: 1.1;
+  margin-bottom: var(--space-6);
   letter-spacing: -0.02em;
-  background: linear-gradient(to right, #ffffff, #e2e8f0);
+  background: linear-gradient(to bottom, #fff, #cbd5e1);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
 
 .subtitle {
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
-  margin-bottom: 56px;
-  color: #cbd5e1; /* Slate 300 */
-  font-weight: 400;
-  max-width: 700px;
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  color: #94a3b8;
+  margin-bottom: var(--space-12);
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
-  animation: fadeInUp 0.8s ease-out 0.4s backwards;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: clamp(2rem, 8vw, 3rem); /* Smaller on mobile */
-    margin-bottom: 16px;
-  }
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 32px;
-    padding: 0 10px; /* Prevent text touching edges */
-  }
-  .badge {
-    margin-bottom: 20px;
-    font-size: 0.75rem;
-    padding: 8px 16px;
-  }
+.trustIndicators {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
 }
 
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.75rem;
-    margin-bottom: 12px;
-  }
-  .subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 24px;
-  }
-  .badge {
-    font-size: 0.7rem;
-    padding: 6px 12px;
-    margin-bottom: 16px;
-  }
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.indicator svg {
+  color: var(--primary-color);
 }
 
 .actions {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  animation: fadeInUp 0.8s ease-out 0.6s backwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  gap: var(--space-6);
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 100px 20px 60px;
+    padding: 100px 0 60px;
     min-height: auto;
   }
 
   .actions {
     flex-direction: column;
-    width: 100%;
-    gap: 16px;
+    padding: 0 var(--space-4);
   }
 
-  .actions button,
-  .actions a {
+  .actions > a {
     width: 100%;
+  }
+
+  .trustIndicators {
+    gap: var(--space-3);
+  }
+
+  .indicator {
+    font-size: 0.875rem;
+    padding: var(--space-2) var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-10);
+  }
+
+  .badge {
+    padding: var(--space-2) var(--space-4);
+    font-size: 0.75rem;
   }
 }
