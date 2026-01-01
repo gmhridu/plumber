@@ -12,7 +12,7 @@ export default function Header() {
             alt="Urgence Plombier Paris 15"
             width={180}
             height={50}
-            style={{ width: 'auto', height: '80px' }}
+            style={{ width: 'auto', height: '70px' }}
             priority
           />
         </Link>

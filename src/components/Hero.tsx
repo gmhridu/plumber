@@ -15,7 +15,7 @@ export default function Hero() {
         <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
           Une fuite d&apos;eau, une canalisation bouchée ou un chauffe-eau en panne ?
           <br />
-          Nos artisans plombiers certifiés interviennent à Paris 15, 16, 17 et toute l&apos;Île-de-France, jours fériés inclus.
+          Nos artisans plombiers certifiés interviennent à Paris et toute l&apos;Île-de-France, jours fériés inclus.
         </p>
         <div className={`${styles.trustIndicators} animate-fade-in`} style={{ animationDelay: '0.5s' }}>
           <div className={styles.indicator}>
