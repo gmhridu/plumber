@@ -91,6 +91,16 @@
   gap: var(--space-6);
 }
 
+.ctaButton {
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  padding: clamp(var(--space-3), 2.5vw, 1.125rem)
+    clamp(var(--space-6), 5vw, 2.25rem);
+}
+
+.secondaryButton {
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 100px 0 60px;
@@ -100,6 +110,7 @@
   .actions {
     flex-direction: column;
     padding: 0 var(--space-4);
+    gap: var(--space-4);
   }
 
   .actions > a {

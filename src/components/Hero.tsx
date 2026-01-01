@@ -28,11 +28,11 @@ export default function Hero() {
           </div>
         </div>
         <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.6s' }}>
-          <a href="tel:0620202084" className="btn btn-primary" style={{ fontSize: '1.25rem', padding: '18px 36px' }}>
+          <a href="tel:0620202084" className={`btn btn-primary ${styles.ctaButton}`}>
             <Phone size={24} />
             Appelez maintenant - 06 20 20 20 84
           </a>
-          <a href="#services" className="btn btn-secondary" style={{ fontSize: '1.125rem' }}>
+          <a href="#services" className={`btn btn-secondary ${styles.secondaryButton}`}>
             Voir nos services
           </a>
         </div>

@@ -14,7 +14,7 @@ const stats = [
   },
   {
     icon: Star,
-    number: '4.9/5',
+    number: '4.7/5',
     label: 'Note Moyenne',
   },
   {

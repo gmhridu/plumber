@@ -30,7 +30,7 @@ const badges = [
   {
     icon: Users,
     title: '500+ Clients',
-    description: 'Note 4.9/5',
+    description: 'Note 4.7/5',
   },
 ];
 
