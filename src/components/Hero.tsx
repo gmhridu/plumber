@@ -10,7 +10,7 @@ export default function Hero() {
           Intervention immédiate 24/7
         </div>
         <h1 className={`${styles.title} animate-fade-in`} style={{ animationDelay: '0.2s' }}>
-          Plombier d&apos;Urgence Paris et banlieue – Intervention en 30 min
+          Plombier d&apos;Urgence Paris et banlieue Intervention en 30 min
         </h1>
         <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
           Une fuite d&apos;eau, une canalisation bouchée ou un chauffe-eau en panne ?
