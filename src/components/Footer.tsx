@@ -7,13 +7,13 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.content}`}>
         <div className={styles.column}>
-          <div className={styles.logoContainer}>
+          <div>
             <NextImage
               src="/urgence-removebg-preview.png"
               alt="Plombier d'Urgence"
               width={140}
-              height={50}
-              style={{ width: 'auto', height: '40px', marginBottom: '0px' }}
+              height={100}
+              style={{ width: 'auto', height: '100px', marginBottom: '0px' }}
             />
           </div>
           <p className={styles.text}>

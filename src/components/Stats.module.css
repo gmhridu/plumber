@@ -3,6 +3,15 @@
   background-color: var(--bg-secondary);
 }
 
+.title {
+  text-align: center;
+  margin-bottom: var(--space-12);
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
