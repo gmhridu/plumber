@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/" className={styles.logoLink}>
           <Image
             src="/urgence-removebg-preview.png"
-            alt="Urgence Plombier Paris 15"
+            alt="Urgence Plombier Paris"
             width={180}
             height={50}
             style={{ width: 'auto', height: '70px' }}
@@ -24,12 +24,13 @@ export default function Header() {
           </a>
           <a
             href="tel:0620202084"
-            className="btn btn-primary"
+            className={`${styles.callBtn} btn btn-primary`}
             data-conversion-action="call"
             data-conversion-label="header_call"
           >
             Appeler
           </a>
+
         </div>
       </div>
     </header>

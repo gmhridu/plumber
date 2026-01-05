@@ -11,14 +11,14 @@ export const viewport: Viewport = {
 
 
 export const metadata: Metadata = {
-  title: 'Urgence Plombier Paris & IDF - Intervention 24h/24 et 7j/7',
+  title: 'Plombier à Domicile dès 39€ - Urgence Paris & IDF 24/7',
   description: 'Plombier d\'urgence à Paris et Île-de-France. Intervention en 30 minutes pour fuite d\'eau, débouchage et dépannage chauffe-eau. Disponible 24/7. Devis gratuit.',
   metadataBase: new URL('https://www.urgenceplomb.com'),
   alternates: {
     canonical: 'https://www.urgenceplomb.com',
   },
   openGraph: {
-    title: 'Urgence Plombier Paris & IDF - Intervention 24h/24 et 7j/7',
+    title: 'Plombier à Domicile dès 39€ - Urgence Paris & IDF 24/7',
     description: 'Besoin d\'un plombier en urgence ? Arrivée en 30 min sur Paris et IDF. Fuite, débouchage, réparation. Service 24/7.',
     locale: 'fr_FR',
     type: 'website',

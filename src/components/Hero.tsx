@@ -5,19 +5,42 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.content}`}>
-        <div className={`${styles.badge} animate-fade-in`}>
-          <Clock size={16} />
-          Intervention immédiate 24/7
+        <div className={`${styles.interventionBadge} animate-fade-in`}>
+          Délai moyen d&apos;intervention <span>30 min</span>
         </div>
+
         <h1 className={`${styles.title} animate-fade-in`} style={{ animationDelay: '0.2s' }}>
-          Plombier d&apos;Urgence Paris et banlieue Intervention en 30 min
+          Plombier à Domicile
         </h1>
-        <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
+
+        <div className={`${styles.location} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
+          PARIS & ÎLE-DE-FRANCE
+        </div>
+
+        <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
+          <a href="tel:0620202084" className={`btn btn-primary ${styles.ctaButton}`}>
+            <Phone size={24} />
+            06 20 20 20 84
+          </a>
+        </div>
+
+        <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.5s' }}>
           Une fuite d&apos;eau, une canalisation bouchée ou un chauffe-eau en panne ?
           <br />
-          Nos artisans plombiers certifiés interviennent à Paris et toute l&apos;Île-de-France, jours fériés inclus.
+          Nos artisans plombiers certifiés interviennent en 30 min, jours fériés inclus.
         </p>
-        <div className={`${styles.trustIndicators} animate-fade-in`} style={{ animationDelay: '0.5s' }}>
+
+        <div className={styles.priceTagContainer}>
+          <div className={`${styles.priceTag} animate-fade-in`} style={{ animationDelay: '0.6s' }}>
+            <span className={styles.priceLabel}>à partir de</span>
+            <div className={styles.priceAmount}>
+              <span className={styles.number}>39</span>
+              <span className={styles.symbol}>€*</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.trustIndicators} animate-fade-in`} style={{ animationDelay: '0.7s' }}>
           <div className={styles.indicator}>
             <Shield size={20} />
             <span>Certifié & Assuré</span>
@@ -26,15 +49,6 @@ export default function Hero() {
             <Clock size={20} />
             <span>Disponible 24/7</span>
           </div>
-        </div>
-        <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.6s' }}>
-          <a href="tel:0620202084" className={`btn btn-primary ${styles.ctaButton}`}>
-            <Phone size={24} />
-            Appelez maintenant - 06 20 20 20 84
-          </a>
-          <a href="#services" className={`btn btn-secondary ${styles.secondaryButton}`}>
-            Voir nos services
-          </a>
         </div>
       </div>
     </section>

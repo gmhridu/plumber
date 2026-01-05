@@ -10,7 +10,7 @@ const badges = [
   {
     icon: Award,
     title: 'Artisans Qualifiés',
-    description: 'RGE & QualiPAC',
+    description: '',
   },
   {
     icon: Clock,

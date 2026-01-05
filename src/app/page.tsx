@@ -16,12 +16,12 @@ import TrustBadges from '@/components/TrustBadges';
 import ServiceAreas from '@/components/ServiceAreas';
 
 export const metadata: Metadata = {
-  title: 'Plombier d\'Urgence Paris 15 - Intervention Fuite d\'Eau en 30 min | 24/7',
-  description: 'Plombier d\'urgence à Paris 15, 16, 17. Intervention rapide en 30 min pour fuite d\'eau, débouchage canalisation, chauffe-eau. Disponible 24/7, devis gratuit.',
+  title: 'Plombier à Domicile 39€ - Dépannage dans l\'heure Paris',
+  description: 'Plombier d\'urgence à Paris. Intervention rapide dès 39€ pour fuite d\'eau, débouchage canalisation, chauffe-eau. Disponible 24/7, devis gratuit.',
   alternates: {
     canonical: 'https://www.urgenceplomb.com',
   },
-  keywords: 'plombier urgence Paris 15, plombier Paris 16, fuite eau Paris, débouchage toilette, plombier 24/7, dépannage plomberie',
+  keywords: 'Plombier à Domicile, plombier 39€, plombier urgence Paris, dépannage plomberie Paris, fuite eau, débouchage canalisation',
 };
 
 export default function Home() {

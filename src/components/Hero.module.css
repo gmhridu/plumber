@@ -21,114 +21,147 @@
   text-align: center;
 }
 
-.badge {
+.interventionBadge {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  background: hsla(var(--primary-hue), 84%, 39%, 0.15);
-  backdrop-filter: blur(8px);
-  border: 1px solid hsla(var(--primary-hue), 84%, 39%, 0.3);
-  color: var(--primary-color);
-  padding: var(--space-2) var(--space-6);
-  border-radius: var(--radius-full);
-  font-weight: 700;
-  font-family: var(--font-heading);
-  font-size: 0.875rem;
-  margin-bottom: var(--space-8);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  background: white;
+  color: #475569;
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.interventionBadge span {
+  color: var(--accent-color);
+  margin-left: 6px;
+  font-weight: 800;
 }
 
 .title {
-  font-size: clamp(2.25rem, 7vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: var(--space-6);
-  letter-spacing: -0.01em;
-  background: linear-gradient(to bottom, #ffffff, #e2e8f0);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 100%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
-.subtitle {
-  font-size: clamp(1.125rem, 3vw, 1.5rem);
-  color: #94a3b8;
-  margin-bottom: var(--space-12);
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-.trustIndicators {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--space-6);
-  margin-bottom: var(--space-12);
-}
-
-.indicator {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--space-2) var(--space-5);
-  border-radius: var(--radius-full);
-  font-weight: 600;
-  font-size: 0.9375rem;
-}
-
-.indicator svg {
-  color: var(--primary-color);
+.location {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: white;
+  margin-bottom: 24px;
 }
 
 .actions {
   display: flex;
   justify-content: center;
-  gap: var(--space-6);
+  margin-bottom: 32px;
 }
 
 .ctaButton {
-  font-size: clamp(1rem, 4vw, 1.25rem);
-  padding: clamp(var(--space-3), 2.5vw, 1.125rem)
-    clamp(var(--space-6), 5vw, 2.25rem);
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 12px 48px;
+  border-radius: 40px;
+  box-shadow: 0 10px 25px rgba(var(--accent-hue), 90%, 55%, 0.4);
 }
 
-.secondaryButton {
-  font-size: clamp(0.875rem, 3vw, 1.125rem);
+.ctaButton:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.priceTagContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.priceTag {
+  width: 140px;
+  height: 140px;
+  background: var(--accent-color);
+  border: 6px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: rotate(-5deg);
+}
+
+.priceLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-bottom: -5px;
+}
+
+.priceAmount {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.number {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.symbol {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.trustIndicators {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
   .hero {
     padding: 100px 0 60px;
-    min-height: auto;
   }
 
-  .actions {
-    flex-direction: column;
-    padding: 0 var(--space-4);
-    gap: var(--space-4);
+  .priceTag {
+    width: 120px;
+    height: 120px;
   }
 
-  .actions > a {
-    width: 100%;
-  }
-
-  .trustIndicators {
-    gap: var(--space-3);
-  }
-
-  .indicator {
-    font-size: 0.875rem;
-    padding: var(--space-2) var(--space-4);
+  .number {
+    font-size: 2.75rem;
   }
 }
 
