@@ -16,12 +16,12 @@ import TrustBadges from '@/components/TrustBadges';
 import ServiceAreas from '@/components/ServiceAreas';
 
 export const metadata: Metadata = {
-  title: 'Plombier à Domicile 39€ - Dépannage dans l\'heure Paris',
-  description: 'Plombier d\'urgence à Paris. Intervention rapide dès 39€ pour fuite d\'eau, débouchage canalisation, chauffe-eau. Disponible 24/7, devis gratuit.',
+  title: 'Plombier à Domicile 39€ - Dépannage dans l\'heure en Île-de-France',
+  description: 'Plombier d\'urgence en Île-de-France. Intervention rapide dès 39€ pour fuite d\'eau, débouchage canalisation, chauffe-eau. Disponible 24/7, devis gratuit.',
   alternates: {
     canonical: 'https://www.urgenceplomb.com',
   },
-  keywords: 'Plombier à Domicile, plombier 39€, plombier urgence Paris, dépannage plomberie Paris, fuite eau, débouchage canalisation',
+  keywords: 'Plombier à Domicile, plombier 39€, plombier urgence, dépannage plomberie IDF, fuite eau, débouchage canalisation',
 };
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
     description: 'Service de dépannage plomberie d\'urgence 24h/24 et 7j/7 en Île-de-France. Intervention en 30 minutes pour fuite, débouchage et chauffe-eau.',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Paris',
+      addressLocality: 'Île-de-France',
       addressRegion: 'IDF',
       addressCountry: 'FR'
     },
@@ -84,7 +84,7 @@ export default function Home() {
           '@type': 'Rating',
           ratingValue: '5'
         },
-        reviewBody: 'Facture conforme au devis téléphonique. C\'est rare de trouver un plombier honnête à Paris. Je garde le numéro.'
+        reviewBody: 'Facture conforme au devis téléphonique. C\'est rare de trouver un plombier honnête. Je garde le numéro.'
       }
     ],
     sameAs: [
@@ -136,7 +136,7 @@ export default function Home() {
     description: 'Service de dépannage plomberie d\'urgence 24h/24 et 7j/7 en Île-de-France.',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Paris',
+      addressLocality: 'Île-de-France',
       addressRegion: 'IDF',
       addressCountry: 'FR'
     },
@@ -157,7 +157,7 @@ export default function Home() {
         name: 'Quels sont vos délais d\'intervention ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Nous intervenons en urgence sous 30 minutes à Paris et en Île-de-France, 24h/24 et 7j/7.'
+          text: 'Nous intervenons en urgence sous 30 minutes en Île-de-France, 24h/24 et 7j/7.'
         }
       },
       {

@@ -1,18 +1,18 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Réparation Fuite d\'Eau Paris - Détection et Réparation Rapide',
-  description: 'Réparation fuite d\'eau Paris. Détection fuite invisible, réparation robinet, canalisation. Économies d\'eau garanties. Devis gratuit.',
+  title: 'Réparation Fuite d\'Eau - Détection et Réparation Rapide',
+  description: 'Réparation fuite d\'eau. Détection fuite invisible, réparation robinet, canalisation. Économies d\'eau garanties. Devis gratuit.',
 };
 
-export default function ReparationFuiteEauParisPage() {
+export default function ReparationFuiteEauPage() {
   const faq = [
     {
       question: "Comment détecter une fuite d'eau invisible ?",
       answer: "Nous utilisons des caméras thermiques, des détecteurs acoustiques et des compteurs d'eau. Détection précise sans casse."
     },
     {
-      question: "Prix réparation d'une fuite à Paris ?",
+      question: "Prix réparation d'une fuite ?",
       answer: "À partir de 80€ pour une réparation simple. Tarif selon accessibilité et complexité. Devis gratuit avant travaux."
     },
     {
@@ -35,10 +35,10 @@ export default function ReparationFuiteEauParisPage() {
     serviceType: 'Réparation Fuite d\'Eau',
     provider: {
       '@type': 'Plumber',
-      name: 'Urgence Plombier Paris',
+      name: 'Urgence Plombier',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Paris',
+        addressLocality: 'Île-de-France',
         addressCountry: 'FR'
       },
       telephone: '+33620202084',
@@ -46,9 +46,9 @@ export default function ReparationFuiteEauParisPage() {
     },
     areaServed: {
       '@type': 'City',
-      name: 'Paris'
+      name: 'Île-de-France'
     },
-    description: 'Service de réparation de fuites d\'eau à Paris'
+    description: 'Service de réparation de fuites d\'eau en Île-de-France'
   };
 
   const faqSchema = {
@@ -79,10 +79,10 @@ export default function ReparationFuiteEauParisPage() {
         <section className="relative bg-gradient-to-b from-cyan-700 to-cyan-600 text-white py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Réparation Fuite d&apos;Eau Paris - Détection et Réparation Professionnelle
+              Réparation Fuite d&apos;Eau - Détection et Réparation Professionnelle
             </h1>
             <p className="text-xl mb-8 opacity-90">
-              Spécialiste de la réparation de fuites d&apos;eau à Paris. Détection de fuites invisibles, réparation de robinets,
+              Spécialiste de la réparation de fuites d&apos;eau. Détection de fuites invisibles, réparation de robinets,
               canalisations percées. Économies d&apos;eau garanties. Intervention rapide, devis gratuit.
             </p>
 
@@ -113,10 +113,10 @@ export default function ReparationFuiteEauParisPage() {
 
         <div className="max-w-4xl mx-auto px-4 py-12">
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Réparation de Fuites d&apos;Eau à Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Réparation de Fuites d&apos;Eau</h2>
             <p className="text-lg text-gray-700 mb-8">
-              Les fuites d&apos;eau sont responsables de 20% de la consommation d&apos;eau en France. À Paris,
-              où l&apos;eau est particulièrement chère, une fuite non détectée peut coûter plusieurs centaines d&apos;euros
+              Les fuites d&apos;eau sont responsables de 20% de la consommation d&apos;eau en France.
+              Une fuite non détectée peut coûter plusieurs centaines d&apos;euros
               par an. Notre expertise en détection et réparation de fuites vous permet de réaliser des économies
               substantielles tout en préservant votre installation.
             </p>
@@ -164,33 +164,31 @@ export default function ReparationFuiteEauParisPage() {
               </div>
             </div>
             <p className="text-gray-700 mt-8">
-              À Paris, les installations anciennes (immeubles haussmanniens) nécessitent une expertise particulière.
-              Nos plombiers connaissent les spécificités des canalisations parisiennes : matériaux anciens,
+              Nos plombiers connaissent les spécificités de la région : matériaux anciens,
               accès difficiles, contraintes architecturales. Nous intervenons avec respect pour le patrimoine bâti.
             </p>
           </section>
 
           <section className="mb-12 bg-white p-8 rounded-2xl shadow-sm">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi Traiter les Fuites d&apos;Eau à Paris ?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi Traiter les Fuites d&apos;Eau ?</h2>
             <p className="text-gray-700 mb-4">
-              Paris est l&apos;une des villes où l&apos;eau est la plus chère de France. Le prix du mètre cube
-              d&apos;eau potable dépasse les 4€, hors assainissement. Une petite fuite de 1 litre par minute
-              représente 43m³ par an, soit plus de 170€ de facture d&apos;eau !
+              Une petite fuite de 1 litre par minute
+              représente 43m³ par an, soit un surcoût important sur votre facture d&apos;eau !
             </p>
             <p className="text-gray-700 mb-4">
               Au-delà de l&apos;aspect financier, les fuites peuvent causer des dégradations importantes :
               moisissures, infiltrations, décollement de papiers peints, affaiblissement des structures.
-              Dans les copropriétés parisiennes, une fuite non traitée peut affecter plusieurs voisins.
+              Dans les copropriétés, une fuite non traitée peut affecter plusieurs voisins.
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 marker:text-cyan-600 mb-4">
-              <li>Économies sur la facture d&apos;eau : jusqu&apos;à 200€/an pour une petite fuite</li>
+              <li>Économies sur la facture d&apos;eau</li>
               <li>Prévention des dégradations des murs et sols</li>
               <li>Évitement des conflits avec les voisins en copropriété</li>
               <li>Réduction de l&apos;empreinte environnementale</li>
               <li>Valorisation de votre bien immobilier</li>
             </ul>
             <p className="text-gray-700">
-              Notre service de réparation de fuites à Paris inclut systématiquement un contrôle après intervention
+              Notre service de réparation de fuites inclut systématiquement un contrôle après intervention
               pour vérifier l&apos;efficacité de la réparation. Nous vous remettons un certificat de conformité
               et des conseils de prévention pour éviter les récidives.
             </p>
@@ -209,12 +207,12 @@ export default function ReparationFuiteEauParisPage() {
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-6 rounded-r-xl mb-6">
               <p className="italic text-gray-700 mb-4">
                 &quot;Robinet de cuisine qui gouttait jour et nuit. Changement du mécanisme en 30 minutes.
-                Plus une goutte ! Service impeccable et prix correct pour Paris.&quot;
+                Plus une goutte ! Service impeccable et prix correct.&quot;
               </p>
               <p className="font-bold text-gray-900">- Marc D., 3ème arrondissement</p>
             </div>
             <p className="text-gray-700 mb-4">
-              Plus de 95% de nos clients parisiens constatent une baisse significative de leur facture d&apos;eau
+              Plus de 95% de nos clients constatent une baisse significative de leur facture d&apos;eau
               après notre intervention. Notre taux de satisfaction atteint 4.9/5, et 98% de nos réparations
               tiennent sans problème au-delà de 2 ans.
             </p>
@@ -226,7 +224,7 @@ export default function ReparationFuiteEauParisPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes - Réparation Fuites Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes - Réparation Fuites</h2>
             <div className="space-y-4">
               {faq.map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">

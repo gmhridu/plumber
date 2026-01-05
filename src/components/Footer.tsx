@@ -19,7 +19,7 @@ export default function Footer() {
           <p className={styles.text}>
             Service de dépannage plomberie d&apos;urgence 24h/24 et 7j/7.
             <br />
-            Intervention en 30 minutes à Paris et IDF.
+            Intervention en 30 minutes en Île-de-France.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
 
         <div className={styles.column}>
           <h3 className={styles.title}>Nos Interventions</h3>
-          <Link href="/services/fuite-chauffe-eau-paris-15" className={styles.link}>Fuite Chauffe-Eau Paris</Link>
+          <Link href="/services/fuite-chauffe-eau-15" className={styles.link}>Fuite Chauffe-Eau</Link>
           <Link href="/#zones" className={styles.link}>Zones de Service</Link>
         </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
           <p className={styles.text}>
             <strong>Email : </strong>Bats.services19@gmail.com
           </p>
-          <p className={styles.text}>Zone d&apos;intervention : Paris et IDF</p>
+          <p className={styles.text}>Zone d&apos;intervention : Île-de-France</p>
         </div>
 
         <div className={styles.column}>

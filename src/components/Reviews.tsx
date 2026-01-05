@@ -13,7 +13,7 @@ const reviews = [
   },
   {
     author: 'M. Petit',
-    text: 'Facture conforme au devis téléphonique. C’est rare de trouver un plombier honnête à Paris. Je garde le numéro.',
+    text: 'Facture conforme au devis téléphonique. C’est rare de trouver un plombier honnête. Je garde le numéro.',
     stars: 5,
   },
 ];

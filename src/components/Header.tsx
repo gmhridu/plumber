@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/" className={styles.logoLink}>
           <Image
             src="/urgence-removebg-preview.png"
-            alt="Urgence Plombier Paris"
+            alt="Urgence Plombier"
             width={180}
             height={50}
             style={{ width: 'auto', height: '70px' }}

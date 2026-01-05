@@ -1,14 +1,14 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Plombier Paris - Service de Plomberie Professionnel 24/7',
-  description: 'Besoin d\'un plombier à Paris ? Intervention rapide 24/7 pour réparation fuite, débouchage, installation. Devis gratuit, prix transparents.',
+  title: 'Plombier - Service de Plomberie Professionnel 24/7',
+  description: 'Besoin d\'un plombier ? Intervention rapide 24/7 for réparation fuite, débouchage, installation. Devis gratuit, prix transparents.',
 };
 
-export default function PlombierParisPage() {
+export default function PlombierPage() {
   const faq = [
     {
-      question: "Combien coûte un plombier à Paris ?",
+      question: "Combien coûte un plombier ?",
       answer: "Les prix démarrent à 80€ pour une intervention simple. Le tarif exact dépend de la complexité et de l'urgence. Devis gratuit sans engagement."
     },
     {
@@ -36,10 +36,10 @@ export default function PlombierParisPage() {
     serviceType: 'Plomberie',
     provider: {
       '@type': 'Plumber',
-      name: 'Urgence Plombier Paris',
+      name: 'Urgence Plombier',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Paris',
+        addressLocality: 'Île-de-France',
         addressCountry: 'FR'
       },
       telephone: '+33620202084',
@@ -47,9 +47,9 @@ export default function PlombierParisPage() {
     },
     areaServed: {
       '@type': 'City',
-      name: 'Paris'
+      name: 'Île-de-France'
     },
-    description: 'Service de plomberie professionnel à Paris avec intervention 24/7'
+    description: 'Service de plomberie professionnel en Île-de-France avec intervention 24/7'
   };
 
   const faqSchema = {
@@ -70,7 +70,7 @@ export default function PlombierParisPage() {
     '@type': 'Review',
     itemReviewed: {
       '@type': 'Service',
-      name: 'Plomberie Paris'
+      name: 'Plomberie'
     },
     author: {
       '@type': 'Person',
@@ -80,7 +80,7 @@ export default function PlombierParisPage() {
       '@type': 'Rating',
       ratingValue: '5'
     },
-    reviewBody: 'Service exceptionnel ! Le plombier est arrivé en 25 minutes pour réparer une fuite sous l\'évier. Travail impeccable, propre, et prix très raisonnable pour Paris. Je recommande vivement !'
+    reviewBody: 'Service exceptionnel ! Le plombier est arrivé en 25 minutes pour réparer une fuite sous l\'évier. Travail impeccable, propre, et prix très raisonnable. Je recommande vivement !'
   };
 
   return (
@@ -103,10 +103,10 @@ export default function PlombierParisPage() {
         <section className="relative bg-gradient-to-b from-green-700 to-green-600 text-white py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Plombier Paris - Intervention Rapide et Professionnelle 24/7
+              Plombier - Intervention Rapide et Professionnelle 24/7
             </h1>
             <p className="text-xl mb-8 opacity-90">
-              Besoin d&apos;un plombier de confiance à Paris ? Notre équipe qualifiée intervient en urgence pour tous vos problèmes de plomberie.
+              Besoin d&apos;un plombier de confiance ? Notre équipe qualifiée intervient en urgence pour tous vos problèmes de plomberie.
               Réparation de fuites, débouchage de canalisations, installation de sanitaires. Devis gratuit et intervention sous 30 minutes.
             </p>
 
@@ -140,11 +140,11 @@ export default function PlombierParisPage() {
         <div className="max-w-4xl mx-auto px-4 py-12">
           {/* H2 - Services */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Nos Services de Plomberie à Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Nos Services de Plomberie</h2>
             <p className="text-lg text-gray-700 mb-8">
-              En tant que plombiers professionnels à Paris, nous proposons une gamme complète de services pour répondre à tous vos besoins en plomberie.
-              Que ce soit pour une réparation urgente ou des travaux d&apos;installation, notre équipe est équipée pour intervenir rapidement et efficacement.
-              Nous utilisons uniquement des matériaux de qualité et des techniques modernes pour garantir la durabilité de nos interventions.
+              En tant que plombiers professionnels, nous proposons une gamme complète de services pour répondre à tous vos besoins en plomberie.
+              Que ce soit for une réparation urgente ou des travaux d&apos;installation, notre équipe est équipée for intervenir rapidement et efficacement.
+              Nous utilisons uniquement des matériaux de qualité et des techniques modernes for garantir la durabilité de nos interventions.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
@@ -182,7 +182,7 @@ export default function PlombierParisPage() {
                 <h3 className="font-bold text-xl mb-2 text-green-700">Urgences Plomberie</h3>
                 <p className="text-gray-600 mb-4">
                   Intervention d&apos;urgence 24h/24 et 7j/7 pour inondations, fuites importantes, WC bouchés critiques.
-                  Temps d&apos;arrivée moyen de 30 minutes dans Paris intra-muros.
+                  Temps d&apos;arrivée moyen de 30 minutes.
                 </p>
                 <p className="text-gray-600">
                   Service prioritaire pour les situations d&apos;urgence. Tarifs transparents même en dehors des heures normales.
@@ -190,36 +190,34 @@ export default function PlombierParisPage() {
               </div>
             </div>
             <p className="text-gray-700 mt-8">
-              Tous nos plombiers à Paris sont qualifiés et expérimentés. Nous intervenons dans tous les arrondissements de Paris,
-              du 1er au 20ème, ainsi que dans les communes limitrophes comme Boulogne-Billancourt, Neuilly-sur-Seine, et Levallois-Perret.
-              Notre connaissance du tissu urbain parisien nous permet d&apos;optimiser nos déplacements et de réduire les temps d&apos;intervention.
+              Tous nos plombiers sont qualifiés et expérimentés. Nous intervenons dans toute la région.
+              Notre connaissance du tissu urbain nous permet d&apos;optimiser nos déplacements et de réduire les temps d&apos;intervention.
             </p>
           </section>
 
           {/* H2 - Local Relevance */}
           <section className="mb-12 bg-white p-8 rounded-2xl shadow-sm">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi Choisir un Plombier Local à Paris ?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi Choisir un Plombier Local ?</h2>
             <p className="text-gray-700 mb-4">
-              Paris est une ville unique avec ses contraintes spécifiques : immeubles haussmanniens, copropriétés anciennes,
-              réseaux d&apos;eau complexes. Notre équipe de plombiers parisiens connaît parfaitement ces particularités et sait
+              La région présente des contraintes spécifiques : immeubles anciens, copropriétés,
+              réseaux d&apos;eau complexes. Notre équipe de plombiers connaît parfaitement ces particularités et sait
               intervenir sans endommager les structures historiques ou les installations anciennes.
             </p>
             <p className="text-gray-700 mb-4">
-              Nous intervenons dans tous les quartiers de Paris : du Marais au 4ème arrondissement, des Champs-Élysées au 8ème,
-              de Montmartre au 18ème, en passant par le Quartier Latin au 5ème. Notre maillage territorial nous permet
+              Nous intervenons dans tous les quartiers. Notre maillage territorial nous permet
               d&apos;arriver rapidement, souvent en moins de 30 minutes, même aux heures de pointe.
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 marker:text-green-600 mb-4">
-              <li>Connaissance approfondie des spécificités parisiennes (immeubles anciens, copropriétés)</li>
+              <li>Connaissance approfondie des spécificités locales (immeubles anciens, copropriétés)</li>
               <li>Partenariats avec les syndics et gardiens d&apos;immeubles</li>
-              <li>Respect des réglementations locales et normes parisiennes</li>
+              <li>Respect des réglementations locales</li>
               <li>Intervention rapide grâce à notre implantation locale</li>
-              <li>Support en français avec compréhension des enjeux immobiliers parisiens</li>
+              <li>Support en français avec compréhension des enjeux immobiliers</li>
             </ul>
             <p className="text-gray-700">
-              En choisissant un plombier local à Paris, vous bénéficiez non seulement d&apos;une intervention rapide,
-              mais aussi d&apos;une expertise adaptée aux contraintes de la capitale. Nos tarifs sont compétitifs et
-              tiennent compte du coût de la vie parisien, tout en restant transparents et sans surprise.
+              En choisissant un plombier local, vous bénéficiez non seulement d&apos;une intervention rapide,
+              mais aussi d&apos;une expertise adaptée aux contraintes locales. Nos tarifs sont compétitifs,
+              tout en restant transparents et sans surprise.
             </p>
           </section>
 
@@ -229,7 +227,7 @@ export default function PlombierParisPage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-xl mb-6">
               <p className="italic text-gray-700 mb-4">
                 &quot;Service exceptionnel ! Le plombier est arrivé en 25 minutes pour réparer une fuite sous l&apos;évier.
-                Travail impeccable, propre, et prix très raisonnable pour Paris. Je recommande vivement !&quot;
+                Travail impeccable, propre, et prix très raisonnable. Je recommande vivement !&quot;
               </p>
               <p className="font-bold text-gray-900">- Marie L., 6ème arrondissement</p>
             </div>
@@ -241,12 +239,12 @@ export default function PlombierParisPage() {
               <p className="font-bold text-gray-900">- Thomas D., 15ème arrondissement</p>
             </div>
             <p className="text-gray-700 mb-4">
-              Notre entreprise de plomberie à Paris est reconnue pour son sérieux et sa fiabilité. Nous sommes membres
+              Notre entreprise de plomberie est reconnue pour son sérieux et sa fiabilité. Nous sommes membres
               de la Chambre des Métiers et de l&apos;Artisanat, et tous nos plombiers sont qualifiés et assurés.
               Nous travaillons exclusivement avec des matériaux certifiés et respectons les normes environnementales.
             </p>
             <p className="text-gray-700">
-              Plus de 500 clients satisfaits à Paris nous font confiance chaque année. Notre note moyenne de 4.9/5
+              Plus de 500 clients satisfaits nous font confiance chaque année. Notre note moyenne de 4.9/5
               sur Google et les plateformes d&apos;avis témoigne de la qualité de notre service. Nous nous engageons à
               fournir un travail de qualité, dans les délais, et au meilleur prix.
             </p>
@@ -254,7 +252,7 @@ export default function PlombierParisPage() {
 
           {/* FAQ Section */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes sur les Plombiers à Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes sur les Plombiers</h2>
             <div className="space-y-4">
               {faq.map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
@@ -267,7 +265,7 @@ export default function PlombierParisPage() {
 
           {/* Final CTA */}
           <section className="text-center py-8" id="contact">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Besoin d&apos;un Plombier à Paris ? Contactez-nous !</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Besoin d&apos;un Plombier ? Contactez-nous !</h2>
             <p className="text-lg text-gray-700 mb-6">
               Intervention rapide garantie. Devis gratuit et sans engagement.
             </p>

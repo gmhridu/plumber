@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Débouchage Canalisation Paris - WC, Évier, Douche 24/7',
-  description: 'Débouchage canalisation Paris professionnel. WC bouchés, évier bloqué ? Intervention rapide haute pression. Devis gratuit, résultat garanti.',
+  title: 'Débouchage Canalisation - WC, Évier, Douche 24/7',
+  description: 'Débouchage canalisation professionnel. WC bouchés, évier bloqué ? Intervention rapide haute pression. Devis gratuit, résultat garanti.',
 };
 
-export default function DebouchageCanalisationParisPage() {
+export default function DebouchageCanalisationPage() {
   const faq = [
     {
       question: "Comment déboucher une canalisation bouchée ?",
@@ -16,7 +16,7 @@ export default function DebouchageCanalisationParisPage() {
       answer: "Oui, résultat garanti. Si la canalisation n'est pas débouchée, vous ne payez pas (hors recherche de panne complexe)."
     },
     {
-      question: "Prix d'un débouchage à Paris ?",
+      question: "Prix d'un débouchage ?",
       answer: "Forfait débouchage à partir de 80€. Tarif selon complexité et accessibilité. Devis gratuit sur place."
     },
     {
@@ -35,10 +35,10 @@ export default function DebouchageCanalisationParisPage() {
     serviceType: 'Débouchage Canalisation',
     provider: {
       '@type': 'Plumber',
-      name: 'Urgence Plombier Paris',
+      name: 'Urgence Plombier',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Paris',
+        addressLocality: 'Île-de-France',
         addressCountry: 'FR'
       },
       telephone: '+33620202084',
@@ -46,9 +46,9 @@ export default function DebouchageCanalisationParisPage() {
     },
     areaServed: {
       '@type': 'City',
-      name: 'Paris'
+      name: 'Île-de-France'
     },
-    description: 'Service de débouchage professionnel à Paris'
+    description: 'Service de débouchage professionnel en Île-de-France'
   };
 
   const faqSchema = {
@@ -79,10 +79,10 @@ export default function DebouchageCanalisationParisPage() {
         <section className="relative bg-gradient-to-b from-blue-700 to-blue-600 text-white py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Débouchage Canalisation Paris - Intervention Rapide et Efficace
+              Débouchage Canalisation - Intervention Rapide et Efficace
             </h1>
             <p className="text-xl mb-8 opacity-90">
-              Spécialiste du débouchage de canalisations à Paris. WC bouchés, évier bloqué, douche qui ne s&apos;évacue plus ?
+              Spécialiste du débouchage de canalisations. WC bouchés, évier bloqué, douche qui ne s&apos;évacue plus ?
               Notre équipe utilise des équipements haute pression pour un résultat immédiat. Devis gratuit, intervention 24/7.
             </p>
 
@@ -113,10 +113,10 @@ export default function DebouchageCanalisationParisPage() {
 
         <div className="max-w-4xl mx-auto px-4 py-12">
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Nos Services de Débouchage à Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Nos Services de Débouchage</h2>
             <p className="text-lg text-gray-700 mb-8">
-              Le débouchage de canalisations est notre spécialité à Paris. Avec des années d&apos;expérience dans
-              les immeubles anciens et modernes de la capitale, nous maîtrisons toutes les techniques de débouchage
+              Le débouchage de canalisations est notre spécialité. Avec des années d&apos;expérience dans
+              tous types d&apos;immeubles, nous maîtrisons toutes les techniques de débouchage
               pour résoudre rapidement vos problèmes d&apos;évacuation.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
@@ -157,40 +157,39 @@ export default function DebouchageCanalisationParisPage() {
                   Intervention spécialisée avec caméra d&apos;inspection pour localiser le bouchon.
                 </p>
                 <p className="text-gray-600">
-                  Coordination avec le syndic de copropriété. Solutions adaptées aux installations anciennes parisiennes.
+                  Coordination avec le syndic de copropriété. Solutions adaptées aux installations anciennes.
                 </p>
               </div>
             </div>
             <p className="text-gray-700 mt-8">
-              À Paris, les canalisations anciennes peuvent présenter des particularités : diamètres réduits,
-              coudes difficiles d&apos;accès, matériaux sensibles. Notre expertise locale nous permet d&apos;intervenir
+              Les canalisations anciennes peuvent présenter des particularités : diamètres réduits,
+              coudes difficiles d&apos;accès, matériaux sensibles. Notre expertise nous permet d&apos;intervenir
               sans risque de casse, en préservant l&apos;intégrité de votre installation.
             </p>
           </section>
 
           <section className="mb-12 bg-white p-8 rounded-2xl shadow-sm">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Débouchage de Canalisation à Paris : Notre Expertise Locale</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Débouchage de Canalisation : Notre Expertise</h2>
             <p className="text-gray-700 mb-4">
-              Paris compte des millions de mètres de canalisations souterraines, dont beaucoup datent du XIXe siècle.
+              La région compte des millions de mètres de canalisations souterraines, dont certaines très anciennes.
               Les bouchons peuvent être causés par l&apos;accumulation de calcaire, de graisses, de racines d&apos;arbres,
-              ou simplement par l&apos;usure des matériaux. Notre équipe connaît parfaitement ces enjeux spécifiques à la capitale.
+              ou simplement par l&apos;usure des matériaux. Notre équipe connaît parfaitement ces enjeux.
             </p>
             <p className="text-gray-700 mb-4">
-              Nous intervenons dans tous les arrondissements, des quartiers historiques comme le Marais ou Saint-Germain-des-Prés,
-              aux zones plus modernes comme La Défense ou les Olympiades. Notre maillage territorial nous permet
+              Nous intervenons partout en Île-de-France. Notre maillage territorial nous permet
               d&apos;arriver rapidement, souvent sous la demi-heure, même en période de forte affluence.
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 marker:text-blue-600 mb-4">
-              <li>Équipement adapté aux canalisations parisiennes anciennes</li>
+              <li>Équipement adapté aux canalisations anciennes</li>
               <li>Connaissance des réseaux d&apos;évacuation collectifs</li>
               <li>Partenariats avec les syndics et gardiens d&apos;immeubles</li>
-              <li>Respect des réglementations environnementales parisiennes</li>
+              <li>Respect des réglementations environnementales</li>
               <li>Intervention possible dans les espaces confinés</li>
             </ul>
             <p className="text-gray-700">
               Un bouchon non traité peut rapidement dégénérer : refoulements, infiltrations, odeurs nauséabondes,
               voire ruptures de canalisations. Notre intervention précoce permet d&apos;éviter ces complications coûteuses
-              et de maintenir votre confort de vie dans la capitale.
+              et de maintenir votre confort de vie.
             </p>
           </section>
 
@@ -211,7 +210,7 @@ export default function DebouchageCanalisationParisPage() {
               <p className="font-bold text-gray-900">- Pierre M., 5ème arrondissement</p>
             </div>
             <p className="text-gray-700 mb-4">
-              Notre taux de réussite pour les débouchages à Paris dépasse 95%. Nous utilisons des méthodes
+              Notre taux de réussite pour les débouchages dépasse 95%. Nous utilisons des méthodes
               respectueuses de l&apos;environnement et de vos canalisations. Tous nos techniciens sont formés
               aux dernières techniques et utilisent du matériel professionnel de haute qualité.
             </p>
@@ -222,7 +221,7 @@ export default function DebouchageCanalisationParisPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes sur le Débouchage à Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes sur le Débouchage</h2>
             <div className="space-y-4">
               {faq.map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">

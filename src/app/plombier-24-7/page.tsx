@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Plombier 24/7 Paris - Intervention d\'Urgence Jour et Nuit',
-  description: 'Plombier 24/7 Paris disponible 7j/7. Urgences plomberie nuit/week-end. Intervention sous 30 min. Devis gratuit, prix transparents.',
+  title: 'Plombier 24/7 - Intervention d\'Urgence Jour et Nuit',
+  description: 'Plombier 24/7 disponible 7j/7. Urgences plomberie nuit/week-end. Intervention sous 30 min. Devis gratuit, prix transparents.',
 };
 
-export default function Plombier247ParisPage() {
+export default function Plombier247Page() {
   const faq = [
     {
       question: "Vraiment disponible 24h/24 et 7j/7 ?",
@@ -16,8 +16,8 @@ export default function Plombier247ParisPage() {
       answer: "Majoration de 50€ pour les interventions entre 18h et 8h, et 100€ le dimanche/jours fériés. Tarifs transparents."
     },
     {
-      question: "Temps d'arrivée réel à Paris ?",
-      answer: "Moyenne de 25 minutes dans Paris intra-muros. Notre équipe est répartie stratégiquement pour optimiser les déplacements."
+      question: "Temps d'arrivée réel ?",
+      answer: "Moyenne de 25 minutes. Notre équipe est répartie stratégiquement pour optimiser les déplacements."
     },
     {
       question: "Puis-je appeler pour un problème non urgent ?",
@@ -35,10 +35,10 @@ export default function Plombier247ParisPage() {
     serviceType: 'Plomberie d\'Urgence 24/7',
     provider: {
       '@type': 'Plumber',
-      name: 'Urgence Plombier Paris',
+      name: 'Urgence Plombier',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Paris',
+        addressLocality: 'Île-de-France',
         addressCountry: 'FR'
       },
       telephone: '+33620202084',
@@ -46,9 +46,9 @@ export default function Plombier247ParisPage() {
     },
     areaServed: {
       '@type': 'City',
-      name: 'Paris'
+      name: 'Île-de-France'
     },
-    description: 'Service de plomberie d\'urgence 24/7 à Paris'
+    description: 'Service de plomberie d\'urgence 24/7'
   };
 
   const faqSchema = {
@@ -79,10 +79,10 @@ export default function Plombier247ParisPage() {
         <section className="relative bg-gradient-to-b from-purple-700 to-purple-600 text-white py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Plombier 24/7 Paris - Disponible Jour et Nuit
+              Plombier 24/7 - Disponible Jour et Nuit
             </h1>
             <p className="text-xl mb-8 opacity-90">
-              Besoin d&apos;un plombier de toute urgence à Paris ? Notre service 24/7 intervient à toute heure,
+              Besoin d&apos;un plombier de toute urgence ? Notre service 24/7 intervient à toute heure,
               week-ends et jours fériés inclus. Arrivée garantie sous 30 minutes. Devis gratuit, intervention immédiate.
             </p>
 
@@ -113,9 +113,9 @@ export default function Plombier247ParisPage() {
 
         <div className="max-w-4xl mx-auto px-4 py-12">
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Plombier 24/7 à Paris : Notre Engagement</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Plombier 24/7 : Notre Engagement</h2>
             <p className="text-lg text-gray-700 mb-8">
-              À Paris, les urgences plomberie ne respectent pas les horaires de bureau. Une fuite d&apos;eau,
+              Les urgences plomberie ne respectent pas les horaires de bureau. Une fuite d&apos;eau,
               un WC bouché ou un chauffe-eau en panne peuvent survenir à 3h du matin un dimanche.
               Notre service de plomberie 24/7 est conçu pour répondre à ces situations d&apos;urgence,
               avec une équipe dédiée disponible en permanence.
@@ -144,8 +144,8 @@ export default function Plombier247ParisPage() {
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <h3 className="font-bold text-xl mb-2 text-purple-700">Temps de Réponse Garanti</h3>
                 <p className="text-gray-600 mb-4">
-                  Dans Paris intra-muros : arrivée sous 30 minutes garantie. Banlieue proche :
-                  sous 45 minutes. Géolocalisation en temps réel de nos équipes.
+                  Arrivée sous 30 minutes garantie.
+                  Géolocalisation en temps réel de nos équipes.
                 </p>
                 <p className="text-gray-600">
                   Système de dispatching optimisé pour réduire les temps d&apos;intervention au maximum.
@@ -163,21 +163,20 @@ export default function Plombier247ParisPage() {
               </div>
             </div>
             <p className="text-gray-700 mt-8">
-              Notre service 24/7 couvre tous les arrondissements de Paris, ainsi que les communes limitrophes
-              comme Neuilly-sur-Seine, Boulogne-Billancourt, Levallois-Perret et Vincennes. Notre maillage
+              Notre service 24/7 couvre toute la région. Notre maillage
               territorial nous permet de maintenir des temps d&apos;intervention records même aux heures de pointe.
             </p>
           </section>
 
           <section className="mb-12 bg-white p-8 rounded-2xl shadow-sm">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi un Plombier 24/7 à Paris ?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi un Plombier 24/7 ?</h2>
             <p className="text-gray-700 mb-4">
-              Paris ne dort jamais, et les urgences plomberie non plus. Une inondation en pleine nuit
+              Les urgences plomberie ne dorment jamais. Une inondation en pleine nuit
               peut causer des milliers d&apos;euros de dégâts si elle n&apos;est pas traitée immédiatement.
               Notre service 24/7 permet de limiter les dommages et de protéger votre patrimoine.
             </p>
             <p className="text-gray-700 mb-4">
-              Au-delà de l&apos;urgence, nous connaissons les spécificités parisiennes : codes d&apos;accès
+              Au-delà de l&apos;urgence, nous connaissons les spécificités de la région : codes d&apos;accès
               aux immeubles, parkings souterrains exigus, réglementations de copropriété strictes.
               Notre équipe est formée pour intervenir dans ces conditions particulières.
             </p>
@@ -185,12 +184,12 @@ export default function Plombier247ParisPage() {
               <li>Réduction des dégâts grâce à l&apos;intervention rapide</li>
               <li>Évitement des surcoûts d&apos;urgence (hôtel, nettoyage)</li>
               <li>Protection des biens et des voisins en copropriété</li>
-              <li>Expertise des contraintes parisiennes (accès, horaires)</li>
+              <li>Expertise des contraintes locales (accès, horaires)</li>
               <li>Service premium avec techniciens qualifiés</li>
             </ul>
             <p className="text-gray-700">
               Investir dans un service de plomberie 24/7, c&apos;est investir dans la tranquillité d&apos;esprit.
-              À Paris, où le coût de l&apos;immobilier est élevé, prévenir les catastrophes est essentiel.
+              Prévenir les catastrophes est essentiel.
               Notre assurance urgence couvre tous les risques, et nos tarifs restent compétitifs malgré la disponibilité permanente.
             </p>
           </section>
@@ -212,19 +211,19 @@ export default function Plombier247ParisPage() {
               <p className="font-bold text-gray-900">- Antoine L., 12ème arrondissement</p>
             </div>
             <p className="text-gray-700 mb-4">
-              Notre service 24/7 a traité plus de 2000 urgences à Paris ces 3 dernières années.
+              Notre service 24/7 a traité plus de 2000 urgences ces 3 dernières années.
               Notre taux de satisfaction pour les interventions nocturnes et week-end atteint 4.8/5,
               preuve de la qualité de notre service même dans les conditions les plus difficiles.
             </p>
             <p className="text-gray-700">
               Tous nos plombiers d&quot;urgence sont certifiés, assurés, et équipés de véhicules
-              complets. Nous respectons les réglementations parisiennes en matière de bruit et
+              complets. Nous respectons les réglementations en matière de bruit et
               d&quot;accès, même en intervention nocturne.
             </p>
           </section>
 
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes - Plombier 24/7 Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes - Plombier 24/7</h2>
             <div className="space-y-4">
               {faq.map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">

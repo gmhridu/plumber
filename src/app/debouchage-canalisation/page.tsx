@@ -2,8 +2,8 @@ import ServicePage from '@/components/ServicePage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Débouchage Canalisation Paris - WC, Évier, Douche',
-  description: 'Service de débouchage professionnel à Paris. WC bouchés, évier bloqué ? Intervention rapide haute pression. Devis gratuit.',
+  title: 'Débouchage Canalisation - WC, Évier, Douche',
+  description: 'Service de débouchage professionnel. WC bouchés, évier bloqué ? Intervention rapide haute pression. Devis gratuit.',
 };
 
 export default function DrainUnblockingPage() {
@@ -24,10 +24,10 @@ export default function DrainUnblockingPage() {
 
   return (
     <ServicePage
-      title="Débouchage Canalisation Paris – Intervention 24/7"
-      description="Spécialiste du débouchage WC, évier, douche et colonne générale. Équipement haute pression pour un résultat immédiat."
+      title="Débouchage Canalisation – Intervention 24/7"
+      description="Spécialiste du débouchage WC, évier, douche et colonne générale. Équipement haute pression for un résultat immédiat."
       serviceType="Débouchage"
-      city="Paris & Île-de-France"
+      city="Île-de-France"
       faq={faq}
     />
   );

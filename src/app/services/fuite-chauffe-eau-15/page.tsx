@@ -7,13 +7,13 @@ import styles from './ServicePage.module.css';
 import { Phone, Clock, Shield, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Fuite Chauffe-Eau Paris  – Dépannage en 30 min 24/7',
-  description: 'Urgence fuite chauffe-eau à Paris. Intervention rapide en 30 min pour réparation de ballon d\'eau chaude. Devis gratuit, agréé assurances.',
-  keywords: 'fuite chauffe-eau Paris, réparation ballon eau chaude Paris , plombier chauffe-eau Paris',
+  title: 'Fuite Chauffe-Eau – Dépannage en 30 min 24/7',
+  description: 'Urgence fuite chauffe-eau. Intervention rapide en 30 min pour réparation de ballon d\'eau chaude. Devis gratuit, agréé assurances.',
+  keywords: 'fuite chauffe-eau, réparation ballon eau chaude, plombier chauffe-eau',
 };
 
 export default function ServicePage() {
-  const title = "Fuite Chauffe-Eau Paris – Dépannage en 30 min 24/7";
+  const title = "Fuite Chauffe-Eau – Dépannage en 30 min 24/7";
 
   return (
     <div className={styles.wrapper}>
@@ -23,7 +23,7 @@ export default function ServicePage() {
           <div className="container">
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>
-              Spécialiste du dépannage de chauffe-eau en urgence à Paris. Fuite, panne de résistance ou thermostat, nous intervenons immédiatement.
+              Spécialiste du dépannage de chauffe-eau en urgence. Fuite, panne de résistance ou thermostat, nous intervenons immédiatement.
             </p>
             <div className={styles.ctaBox}>
               <a href="tel:0620202084" className="btn btn-primary">
@@ -38,9 +38,9 @@ export default function ServicePage() {
           <div className="container">
             <div className={styles.grid}>
               <div className={styles.content}>
-                <h2>Réparation Fuite Ballon d&apos;Eau Chaude Paris</h2>
+                <h2>Réparation Fuite Ballon d&apos;Eau Chaude</h2>
                 <p>
-                  Une fuite sur votre chauffe-eau peut rapidement causer des dégâts des eaux importants. Nos artisans plombiers à Paris sont experts en toutes marques (Atlantic, Ariston, Thermor, Fleck).
+                  Une fuite sur votre chauffe-eau peut rapidement causer des dégâts des eaux importants. Nos artisans plombiers sont experts en toutes marques (Atlantic, Ariston, Thermor, Fleck).
                 </p>
                 <ul>
                   <li><CheckCircle size={18} /> Diagnostic gratuit par téléphone</li>

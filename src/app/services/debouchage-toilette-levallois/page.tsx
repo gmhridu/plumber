@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
 import TrustBadges from '@/components/TrustBadges';
-import styles from '../fuite-chauffe-eau-paris-15/ServicePage.module.css'; // Reuse styles
+import styles from '../fuite-chauffe-eau-15/ServicePage.module.css'; // Reuse styles
 import { Phone, Clock, Shield, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {

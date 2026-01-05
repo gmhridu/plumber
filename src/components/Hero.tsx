@@ -14,7 +14,7 @@ export default function Hero() {
         </h1>
 
         <div className={`${styles.location} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
-          PARIS & ÎLE-DE-FRANCE
+          ÎLE-DE-FRANCE
         </div>
 
         <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.4s' }}>

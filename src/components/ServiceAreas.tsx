@@ -2,9 +2,9 @@ import { MapPin } from 'lucide-react';
 import styles from './ServiceAreas.module.css';
 
 const serviceAreas = [
-  { name: 'Paris 15ème', featured: true },
-  { name: 'Paris 16ème', featured: true },
-  { name: 'Paris 17ème', featured: true },
+  { name: '15ème Arrondissement', featured: true },
+  { name: '16ème Arrondissement', featured: true },
+  { name: '17ème Arrondissement', featured: true },
   { name: 'Levallois-Perret', featured: true },
   { name: 'Neuilly-sur-Seine', featured: false },
   { name: 'Boulogne-Billancourt', featured: false },
@@ -24,7 +24,7 @@ export default function ServiceAreas() {
           <MapPin className={styles.headerIcon} />
           <h2 className={styles.title}>Zones d&apos;Intervention</h2>
           <p className={styles.subtitle}>
-            Service de plomberie d&apos;urgence disponible 24/7 dans tout Paris et sa proche banlieue
+            Service de plomberie d&apos;urgence disponible 24/7 dans toute l&apos;Île-de-France
           </p>
         </div>
         <div className={styles.grid}>

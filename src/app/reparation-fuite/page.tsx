@@ -2,8 +2,8 @@ import ServicePage from '@/components/ServicePage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Réparation Fuite d\'Eau Paris - Recherche et Dépannage',
-  description: 'Expert en recherche et réparation de fuite d\'eau à Paris. Intervention rapide pour stopper les dégâts des eaux. Agréé assurances.',
+  title: 'Réparation Fuite d\'Eau - Recherche et Dépannage',
+  description: 'Expert en recherche et réparation de fuite d\'eau. Intervention rapide pour stopper les dégâts des eaux. Agréé assurances.',
 };
 
 export default function LeakRepairPage() {
@@ -24,10 +24,10 @@ export default function LeakRepairPage() {
 
   return (
     <ServicePage
-      title="Réparation Fuite d'Eau Paris – Stop Dégâts des Eaux"
+      title="Réparation Fuite d'Eau – Stop Dégâts des Eaux"
       description="Intervention d'urgence pour tout type de fuite : robinet, chauffe-eau, canalisation encastrée. Nous localisons et réparons immédiatement."
       serviceType="Réparation de Fuite"
-      city="Paris & Île-de-France"
+      city="Île-de-France"
       faq={faq}
     />
   );

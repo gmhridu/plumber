@@ -1,14 +1,14 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Urgence Plomberie Paris - Intervention 24/7 Jour et Nuit',
-  description: 'Urgence plomberie Paris ? Intervention immédiate 24h/24 pour fuites, inondations, WC bouchés. Arrivée sous 30 min. Devis gratuit.',
+  title: 'Urgence Plomberie - Intervention 24/7 Jour et Nuit',
+  description: 'Besoin d\'un plombier en urgence ? Intervention immédiate 24h/24 pour fuites, inondations, WC bouchés. Arrivée sous 30 min. Devis gratuit.',
 };
 
-export default function UrgencePlomberieParisPage() {
+export default function UrgencePlomberiePage() {
   const faq = [
     {
-      question: "Quel est le tarif d'une urgence plomberie à Paris ?",
+      question: "Quel est le tarif d'une urgence plomberie ?",
       answer: "Le tarif d'urgence démarre à 120€ (majoration nocturne/week-end). Tarif dégressif selon la complexité. Devis gratuit."
     },
     {
@@ -35,10 +35,10 @@ export default function UrgencePlomberieParisPage() {
     serviceType: 'Urgence Plomberie',
     provider: {
       '@type': 'Plumber',
-      name: 'Urgence Plombier Paris',
+      name: 'Urgence Plombier',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Paris',
+        addressLocality: 'Île-de-France',
         addressCountry: 'FR'
       },
       telephone: '+33620202084',
@@ -46,9 +46,9 @@ export default function UrgencePlomberieParisPage() {
     },
     areaServed: {
       '@type': 'City',
-      name: 'Paris'
+      name: 'Île-de-France'
     },
-    description: 'Service d\'urgence plomberie 24/7 à Paris'
+    description: 'Service d\'urgence plomberie 24/7'
   };
 
   const faqSchema = {
@@ -69,7 +69,7 @@ export default function UrgencePlomberieParisPage() {
     '@type': 'Review',
     itemReviewed: {
       '@type': 'Service',
-      name: 'Urgence Plomberie Paris'
+      name: 'Urgence Plomberie'
     },
     author: {
       '@type': 'Person',
@@ -101,10 +101,10 @@ export default function UrgencePlomberieParisPage() {
         <section className="relative bg-gradient-to-b from-red-700 to-red-600 text-white py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Urgence Plomberie Paris - Intervention Immédiate 24/7
+              Urgence Plomberie - Intervention Immédiate 24/7
             </h1>
             <p className="text-xl mb-8 opacity-90">
-              Problème de plomberie urgent à Paris ? Fuite d&apos;eau, inondation, WC bouché ? Notre équipe d&apos;urgence intervient
+              Problème de plomberie urgent ? Fuite d&apos;eau, inondation, WC bouché ? Notre équipe d&apos;urgence intervient
               jour et nuit, week-ends et jours fériés. Arrivée garantie sous 30 minutes. Devis gratuit et intervention immédiate.
             </p>
 
@@ -135,9 +135,9 @@ export default function UrgencePlomberieParisPage() {
 
         <div className="max-w-4xl mx-auto px-4 py-12">
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Services d&apos;Urgence Plomberie à Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Services d&apos;Urgence Plomberie</h2>
             <p className="text-lg text-gray-700 mb-8">
-              Face à une urgence plomberie à Paris, chaque minute compte. Notre service d&apos;urgence spécialisé intervient
+              Face à une urgence plomberie, chaque minute compte. Notre service d&apos;urgence spécialisé intervient
               immédiatement pour limiter les dégâts. Que ce soit une fuite importante, une inondation ou un WC bouché critique,
               nous sommes équipés pour réagir rapidement et efficacement.
             </p>
@@ -185,33 +185,33 @@ export default function UrgencePlomberieParisPage() {
               </div>
             </div>
             <p className="text-gray-700 mt-8">
-              Notre service d&apos;urgence plomberie à Paris couvre tous les arrondissements et communes limitrophes.
+              Notre service d&apos;urgence plomberie couvre toute l&apos;Île-de-France et ses communes.
               Grâce à notre flotte de véhicules équipés et notre organisation logistique, nous optimisons les déplacements
               pour arriver le plus rapidement possible, même aux heures de pointe ou en cas d&apos;intempéries.
             </p>
           </section>
 
           <section className="mb-12 bg-white p-8 rounded-2xl shadow-sm">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi Notre Service d&apos;Urgence à Paris ?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pourquoi Notre Service d&apos;Urgence ?</h2>
             <p className="text-gray-700 mb-4">
-              Paris est une ville qui ne dort jamais, et les urgences plomberie peuvent survenir à tout moment.
+              Les urgences plomberie peuvent survenir à tout moment.
               Notre équipe dédiée aux urgences est formée pour intervenir dans les conditions les plus difficiles :
-              immeubles anciens, copropriétés avec codes d&apos;accès, quartiers touristiques bondés.
+              immeubles anciens, copropriétés avec codes d&apos;accès, quartiers denses.
             </p>
             <p className="text-gray-700 mb-4">
-              Nous connaissons les spécificités de chaque quartier : du Marais avec ses ruelles étroites,
-              aux tours modernes de La Défense, en passant par les hôtels particuliers du 7ème arrondissement.
-              Cette expertise locale nous permet d&apos;anticiper les difficultés d&apos;accès et d&apos;arriver préparés.
+              Nous connaissons les spécificités de la région : des centres historiques
+              aux zones plus modernes, en passant par les banlieues résidentielles.
+              Cette expertise nous permet d&apos;anticiper les difficultés d&apos;accès et d&apos;arriver préparés.
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 marker:text-red-600 mb-4">
-              <li>Temps d&apos;intervention moyen de 30 minutes dans Paris</li>
+              <li>Temps d&apos;intervention moyen de 30 minutes</li>
               <li>Équipe dédiée disponible 24h/24, 7j/7</li>
               <li>Véhicules équipés pour interventions d&apos;urgence</li>
               <li>Coordination avec assurances et syndics</li>
               <li>Devis transparent même en urgence</li>
             </ul>
             <p className="text-gray-700">
-              En cas d&apos;urgence plomberie à Paris, ne prenez pas de risques. Un problème mineur peut rapidement
+              En cas d&apos;urgence plomberie, ne prenez pas de risques. Un problème mineur peut rapidement
               devenir une catastrophe coûteuse. Notre intervention précoce permet souvent de limiter les dégâts
               et de réduire le coût total des réparations.
             </p>
@@ -234,7 +234,7 @@ export default function UrgencePlomberieParisPage() {
               <p className="font-bold text-gray-900">- Michel R., 14ème arrondissement</p>
             </div>
             <p className="text-gray-700 mb-4">
-              Notre réputation en matière d&apos;urgence plomberie à Paris repose sur des années d&apos;expérience
+              Notre réputation en matière d&apos;urgence plomberie repose sur des années d&apos;expérience
               et des centaines d&apos;interventions réussies. Nous sommes fiers de notre taux de satisfaction
               de 98% pour les urgences, et de notre capacité à résoudre 95% des problèmes sur place.
             </p>
@@ -245,7 +245,7 @@ export default function UrgencePlomberieParisPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes - Urgence Plomberie Paris</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Questions Fréquentes - Urgence Plomberie</h2>
             <div className="space-y-4">
               {faq.map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">

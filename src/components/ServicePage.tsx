@@ -13,7 +13,7 @@ interface ServicePageProps {
 const defaultFaq = [
   {
     question: "How fast do you arrive?",
-    answer: "We arrive within 30 minutes in Paris and surrounding areas for emergency situations."
+    answer: "We arrive within 30 minutes in the sector and surrounding areas for emergency situations."
   },
   {
     question: "What are your prices?",

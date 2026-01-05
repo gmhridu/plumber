@@ -3,7 +3,7 @@ import styles from './FAQ.module.css';
 const faqs = [
   {
     question: "Quels sont vos délais d'intervention ?",
-    answer: "Nous intervenons en urgence sous 30 minutes à Paris et en Île-de-France, 24h/24 et 7j/7.",
+    answer: "Nous intervenons en urgence sous 30 minutes en Île-de-France, 24h/24 et 7j/7.",
   },
   {
     question: "Les tarifs sont-ils annoncés à l'avance ?",
