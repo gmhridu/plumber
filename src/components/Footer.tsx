@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.content}`}>
         <div className={styles.column}>
-          <div>
+          <div className={styles.logoContainer}>
             <NextImage
               src="/urgence-removebg-preview.png"
               alt="Plombier d'Urgence"
@@ -20,17 +20,6 @@ export default function Footer() {
             Service de dépannage plomberie d&apos;urgence 24h/24 et 7j/7.
             <br />
             Intervention en 30 minutes en Île-de-France.
-          </p>
-        </div>
-
-        <div className={styles.column}>
-          <h3 className={styles.title}>Contact Urgence</h3>
-          <p className={styles.text}>
-            <strong>Tél : </strong>
-            <a href="tel:0620202084">06 20 20 20 84</a>
-          </p>
-          <p className={styles.text}>
-            <strong>Email : </strong>Bats.services19@gmail.com
           </p>
         </div>
 
