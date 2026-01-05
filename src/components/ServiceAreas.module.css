@@ -32,20 +32,23 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: var(--space-4);
   margin-bottom: var(--space-12);
 }
 
 .card {
   background: white;
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-4);
   border-radius: var(--radius-xl);
   border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
   transition: all var(--transition-base);
+  min-height: 56px;
+  min-width: 0;
+  width: 100%;
 }
 
 .card:hover {
@@ -123,5 +126,17 @@
   .icon {
     width: 18px;
     height: 18px;
+  }
+  .card {
+    flex-direction: row;
+    padding: var(--space-3);
+  }
+
+  .areaName {
+    font-size: 0.95rem;
+  }
+
+  .badge {
+    margin-left: auto;
   }
 }

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.content}`}>
         <div className={styles.column}>
-          <div className={styles.logoContainer}>
+          <div>
             <NextImage
               src="/urgence-removebg-preview.png"
               alt="Plombier d'Urgence"

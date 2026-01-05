@@ -27,6 +27,7 @@ export default function ServiceAreas() {
             Service de plomberie d&apos;urgence disponible 24/7 dans toute l&apos;Île-de-France
           </p>
         </div>
+
         <div className={styles.grid}>
           {serviceAreas.map((area, index) => (
             <div
@@ -34,11 +35,16 @@ export default function ServiceAreas() {
               className={`${styles.card} ${area.featured ? styles.featured : ''}`}
             >
               <MapPin className={styles.icon} />
+
               <span className={styles.areaName}>{area.name}</span>
-              {area.featured && <span className={styles.badge}>Prioritaire</span>}
+
+              {area.featured && (
+                <span className={styles.badge}>Prioritaire</span>
+              )}
             </div>
           ))}
         </div>
+
         <div className={styles.cta}>
           <p className={styles.ctaText}>
             Votre commune n&apos;est pas listée ? Contactez-nous pour vérifier notre disponibilité.
