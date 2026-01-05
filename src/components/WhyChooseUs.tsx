@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Clock,
     title: '24/7 Emergency Plumber',
-    description: 'Service d\'urgence disponible tous les jours et toutes les nuits à Paris 15, 16, 17.',
+    description: 'Service d\'urgence disponible tous les jours et toutes les nuits à Paris banlieue.',
   },
   {
     icon: Zap,

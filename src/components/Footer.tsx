@@ -37,7 +37,6 @@ export default function Footer() {
         <div className={styles.column}>
           <h3 className={styles.title}>Nos Interventions</h3>
           <Link href="/services/fuite-chauffe-eau-paris-15" className={styles.link}>Fuite Chauffe-Eau Paris</Link>
-          <Link href="/services/debouchage-toilette-levallois" className={styles.link}>Urgence WC Levallois</Link>
           <Link href="/#zones" className={styles.link}>Zones de Service</Link>
         </div>
 
