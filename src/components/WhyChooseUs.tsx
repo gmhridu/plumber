@@ -4,7 +4,7 @@ import styles from './WhyChooseUs.module.css';
 const benefits = [
   {
     icon: Clock,
-    title: '24/7 Emergency Plumber',
+    title: 'Plombier d’urgence 24h/24 et 7j/7',
     description: 'Service d\'urgence disponible tous les jours et toutes les nuits en Île-de-France.',
   },
   {
