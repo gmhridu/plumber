@@ -2,18 +2,14 @@ import { MapPin } from 'lucide-react';
 import styles from './ServiceAreas.module.css';
 
 const serviceAreas = [
-  { name: '15ème Arrondissement', featured: true },
-  { name: '16ème Arrondissement', featured: true },
-  { name: '17ème Arrondissement', featured: true },
-  { name: 'Levallois-Perret', featured: true },
-  { name: 'Neuilly-sur-Seine', featured: false },
-  { name: 'Boulogne-Billancourt', featured: false },
-  { name: 'Issy-les-Moulineaux', featured: false },
-  { name: 'Courbevoie', featured: false },
-  { name: 'Puteaux', featured: false },
-  { name: 'Clichy', featured: false },
-  { name: 'Asnières-sur-Seine', featured: false },
-  { name: 'Colombes', featured: false },
+  { name: 'Hauts-de-Seine', featured: true },
+  { name: 'Seine-Saint-Denis', featured: true },
+  { name: 'Val-de-Marne', featured: true },
+  { name: 'Yvelines', featured: false },
+  { name: 'Essonne', featured: false },
+  { name: 'Val-d’Oise', featured: false },
+  { name: 'Seine-et-Marne', featured: false },
+  { name: 'Île de France', featured: false },
 ];
 
 export default function ServiceAreas() {

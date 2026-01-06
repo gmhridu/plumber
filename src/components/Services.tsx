@@ -28,7 +28,7 @@ export default function Services() {
   return (
     <section className={styles.section} id="services">
       <div className="container">
-        <h2 className={styles.title}>Nos Services d&apos;Urgence</h2>
+        <h2 className={styles.title}>Nos Services d&apos;urgence</h2>
         <div className={styles.grid}>
           {services.map((service, index) => (
             <div key={index} className={styles.card}>

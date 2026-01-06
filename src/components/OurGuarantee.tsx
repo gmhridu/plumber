@@ -23,7 +23,7 @@ export default function OurGuarantee() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2 className={styles.title}>Notre Garantie</h2>
+        <h2 className={styles.title}>Nos Garantie</h2>
         <div className={styles.grid}>
           {guarantees.map((guarantee, index) => (
             <div key={index} className={styles.card}>
