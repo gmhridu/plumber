@@ -24,6 +24,20 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.urgenceplomb.com',
     siteName: 'Urgence Plomb',
+    images: [
+      {
+        url: '/urgence-removebg-preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Urgence Plomb - Plombier à Domicile 24/7',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Plombier à Domicile dès 39€ - Urgence Île-de-France 24/7',
+    description: 'Plombier d\'urgence en Île-de-France. Intervention en 30 minutes pour fuite d\'eau, débouchage et dépannage chauffe-eau. Disponible 24/7. Devis gratuit.',
+    images: ['/urgence-removebg-preview.png'],
   },
   icons: {
     icon: '/favicon.ico',
@@ -42,8 +56,21 @@ export const metadata: Metadata = {
         sizes: '32x32',
         url: '/favicon.ico',
       },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        url: '/web-app-manifest-192x192.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '512x512',
+        url: '/web-app-manifest-512x512.png',
+      },
     ],
   },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({

@@ -1,0 +1,21 @@
+{
+  "name": "Urgence Plomb - Plombier à Domicile 24/7",
+  "short_name": "Urgence Plomb",
+  "description": "Plombier d'urgence en Île-de-France. Intervention en 30 minutes pour fuite d'eau, débouchage et dépannage chauffe-eau.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2E7D32",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
