@@ -25,6 +25,25 @@ export const metadata: Metadata = {
     url: 'https://www.urgenceplomb.com',
     siteName: 'Urgence Plomb',
   },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        url: '/favicon.ico',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        url: '/favicon.ico',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
