@@ -6,6 +6,7 @@
 // Configuration - these values should be set in .env.local
 export const GOOGLE_ADS_CONVERSION_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID;
 export const GOOGLE_ADS_CALL_CONVERSION_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION_LABEL;
+export const GOOGLE_ADS_DIRECT_CALL_CONVERSION_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_DIRECT_CALL_CONVERSION_LABEL;
 
 /**
  * Sends a Google Ads conversion event
@@ -62,6 +63,31 @@ export const trackGoogleAdsConversion = (
  * @param value - Optional conversion value
  * @param currency - Optional currency code (default: EUR)
  */
+/**
+ * Tracks the "Annonce Appel Direct" conversion and navigates to the specified URL
+ * @param url - Optional URL to navigate to after conversion (can be a phone URL like 'tel:')
+ * @param value - Optional conversion value (default: 1.0)
+ * @param currency - Optional currency code (default: EUR)
+ */
+export const trackDirectCallConversion = (
+  url?: string,
+  value: number = 1.0,
+  currency: string = 'EUR'
+): boolean => {
+  trackGoogleAdsConversion(
+    GOOGLE_ADS_DIRECT_CALL_CONVERSION_LABEL!,
+    value,
+    currency,
+    () => {
+      if (typeof url !== 'undefined') {
+        window.location.href = url;
+      }
+    }
+  );
+
+  return false; // Prevent default link behavior
+};
+
 export const trackCallConversion = (
   phoneNumber: string,
   label: string,
