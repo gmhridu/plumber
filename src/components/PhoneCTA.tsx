@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Phone } from 'lucide-react';
 import { trackCallConversion, GOOGLE_ADS_CALL_CONVERSION_LABEL } from '@/lib/google-ads';
