@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Header.module.css';
+import { PhoneCTA } from './PhoneCTA';
 
 export default function Header() {
   return (
@@ -22,14 +23,11 @@ export default function Header() {
             <span className={styles.phoneLabel}>Disponible 24/7</span>
             <span className={styles.phoneNumber}>06 20 20 20 84</span>
           </a>
-          <a
-            href="tel:0620202084"
-            className={`${styles.callBtn} btn btn-primary`}
-            data-conversion-action="call"
-            data-conversion-label="header_call"
-          >
-            Appeler
-          </a>
+          <PhoneCTA
+            phoneNumber="0620202084"
+            className={styles.callBtn}
+            variant="primary"
+          />
 
         </div>
       </div>

@@ -1,6 +1,13 @@
 import type { Metadata, Viewport } from 'next';
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
+
+const SEO_DEFAULTS = {
+  title: 'Plombier à Domicile dès 39€ - Urgence Île-de-France 24/7',
+  description: 'Plombier d\'urgence en Île-de-France. Intervention en 30 minutes pour fuite d\'eau, débouchage et dépannage chauffe-eau. Disponible 24/7. Devis gratuit.',
+  keywords: ['plombier', 'urgence', 'Île-de-France', 'fuite d\'eau', 'débouchage', 'chauffe-eau', 'réparation', '24/7'],
+  ogImage: '/urgence-removebg-preview.png',
+};
 
 export const viewport: Viewport = {
   themeColor: '#2E7D32',
@@ -9,35 +16,13 @@ export const viewport: Viewport = {
   maximumScale: 1,
 };
 
-
 export const metadata: Metadata = {
-  title: 'Plombier à Domicile dès 39€ - Urgence Île-de-France 24/7',
-  description: 'Plombier d\'urgence en Île-de-France. Intervention en 30 minutes pour fuite d\'eau, débouchage et dépannage chauffe-eau. Disponible 24/7. Devis gratuit.',
-  metadataBase: new URL('https://www.urgenceplomb.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://www.urgenceplomb.fr/'),
+  title: SEO_DEFAULTS.title,
+  description: SEO_DEFAULTS.description,
+  keywords: SEO_DEFAULTS.keywords,
   alternates: {
-    canonical: 'https://www.urgenceplomb.com',
-  },
-  openGraph: {
-    title: 'Plombier à Domicile dès 39€ - Urgence Île-de-France 24/7',
-    description: 'Besoin d\'un plombier en urgence ? Arrivée en 30 min en Île-de-France. Fuite, débouchage, réparation. Service 24/7.',
-    locale: 'fr_FR',
-    type: 'website',
-    url: 'https://www.urgenceplomb.com',
-    siteName: 'Urgence Plomb',
-    images: [
-      {
-        url: '/urgence-removebg-preview.png',
-        width: 1200,
-        height: 630,
-        alt: 'Urgence Plomb - Plombier à Domicile 24/7',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Plombier à Domicile dès 39€ - Urgence Île-de-France 24/7',
-    description: 'Plombier d\'urgence en Île-de-France. Intervention en 30 minutes pour fuite d\'eau, débouchage et dépannage chauffe-eau. Disponible 24/7. Devis gratuit.',
-    images: ['/urgence-removebg-preview.png'],
+    canonical: 'https://www.urgenceplomb.fr/',
   },
   icons: {
     icon: [
@@ -45,24 +30,62 @@ export const metadata: Metadata = {
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
     other: [
       {
         rel: 'icon',
-        type: 'image/png',
-        sizes: '192x192',
         url: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
       },
       {
         rel: 'icon',
-        type: 'image/png',
-        sizes: '512x512',
         url: '/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
       },
     ],
   },
-  manifest: '/manifest.json',
+  manifest: '/site.webmanifest',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Urgence Plomb',
+    startupImage: [
+      {
+        url: '/apple-touch-icon.png',
+        media: '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)',
+      },
+    ],
+  },
+  openGraph: {
+    title: SEO_DEFAULTS.title,
+    description: SEO_DEFAULTS.description,
+    images: [SEO_DEFAULTS.ogImage],
+    type: 'website',
+    locale: 'fr_FR',
+    siteName: 'Urgence Plomb',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SEO_DEFAULTS.title,
+    description: SEO_DEFAULTS.description,
+    images: [SEO_DEFAULTS.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+  },
 };
 
 export default function RootLayout({
@@ -73,7 +96,21 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <GoogleTagManager gtmId="GTM-KCRQWKCJ" />
-      <GoogleAnalytics gaId="AW-17852053762" />
+      {/* Google Ads (gtag.js) setup */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=AW-17852053762`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17852053762');
+          `,
+        }}
+      />
       <body>{children}</body>
     </html>
   );

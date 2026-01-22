@@ -3,6 +3,7 @@
 import { X, Phone } from 'lucide-react';
 import { useState } from 'react';
 import styles from './EmergencyBanner.module.css';
+import { PhoneCTA } from './PhoneCTA';
 
 export default function EmergencyBanner() {
   const [isVisible, setIsVisible] = useState(true);
@@ -18,9 +19,10 @@ export default function EmergencyBanner() {
           </span>
         </div>
 
-        <a href="tel:0620202084" className={styles.callLink}>
-          📞 06 20 20 20 84
-        </a>
+        <PhoneCTA
+          phoneNumber="0620202084"
+          className={styles.callLink}
+        />
 
         <button
           onClick={() => setIsVisible(false)}

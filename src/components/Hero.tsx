@@ -1,5 +1,6 @@
-import { Phone, Shield, Clock } from 'lucide-react';
+import { Shield, Clock } from 'lucide-react';
 import styles from './Hero.module.css';
+import { PhoneCTA } from './PhoneCTA';
 
 export default function Hero() {
   return (
@@ -18,10 +19,10 @@ export default function Hero() {
         </div>
 
         <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
-          <a href="tel:0620202084" className={`btn btn-primary ${styles.ctaButton}`}>
-            <Phone size={24} />
-            06 20 20 20 84
-          </a>
+          <PhoneCTA
+            phoneNumber="0620202084"
+            className={styles.ctaButton}
+          />
         </div>
 
         <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.5s' }}>
