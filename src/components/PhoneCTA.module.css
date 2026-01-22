@@ -1,0 +1,101 @@
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem; /* space between icon & text */
+
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+
+  font-weight: 700;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1;
+
+  white-space: nowrap;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta:active {
+  transform: scale(0.96);
+}
+
+/* ---------- ICON ---------- */
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+/* ---------- VARIANTS ---------- */
+
+.primary {
+  background-color: #f97316; /* orange */
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #ea580c;
+}
+
+.secondary {
+  background: #fff;
+  color: #f97316;
+  border: 2px solid #f97316;
+}
+
+.outline {
+  background: transparent;
+  color: #f97316;
+  border: 2px solid #f97316;
+}
+
+/* StickyCTA.module.css */
+.stickyBar {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+@media (min-width: 640px) {
+  .stickyBar {
+    display: none;
+  }
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (min-width: 640px) {
+  .cta {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem; /* 16px */
+    gap: 0.65rem;
+  }
+
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media (min-width: 1024px) {
+  .cta {
+    padding: 0.85rem 1.75rem;
+    font-size: 1.125rem; /* 18px */
+    gap: 0.75rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
