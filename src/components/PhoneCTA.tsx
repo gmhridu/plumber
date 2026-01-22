@@ -42,7 +42,7 @@ export const PhoneCTA: React.FC<PhoneCTAProps> = ({
   };
 
   // Button styles based on variant
-  const baseStyles = 'inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = 'inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full font-bold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2';
 
   const variantStyles = {
     primary: 'bg-green-600 text-white hover:bg-green-700 focus:ring-green-500 shadow-lg shadow-green-200',
@@ -58,8 +58,8 @@ export const PhoneCTA: React.FC<PhoneCTAProps> = ({
       rel="nofollow"
       aria-label={`Appeler ${phoneNumber}`}
     >
-      <Phone className="w-6 h-6" />
-      <span>Appeler maintenant</span>
+      <Phone className="w-4 h-4 sm:w-6 sm:h-6" />
+      <span>{phoneNumber}</span>
     </a>
   );
 };
@@ -72,7 +72,7 @@ export const PhoneLink: React.FC<PhoneCTAProps> = ({
   className = '',
   variant = 'primary',
 }) => {
-  const baseStyles = 'inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = 'inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full font-bold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2';
 
   const variantStyles = {
     primary: 'bg-green-600 text-white hover:bg-green-700 focus:ring-green-500 shadow-lg shadow-green-200',
@@ -87,8 +87,8 @@ export const PhoneLink: React.FC<PhoneCTAProps> = ({
       rel="nofollow"
       aria-label={`Appeler ${phoneNumber}`}
     >
-      <Phone className="w-6 h-6" />
-      <span>Appeler maintenant</span>
+      <Phone className="w-4 h-4 sm:w-6 sm:h-6" />
+      <span>{phoneNumber}</span>
     </a>
   );
 };
