@@ -33,7 +33,7 @@ export default function Footer() {
           <h3 className={styles.title}>Contact Urgence</h3>
           <p className={styles.text}>
             <strong>Tél : </strong>
-            <a href="tel:0620202084">06 20 20 20 84</a>
+            <a href="tel:06 65 91 48 29">06 65 91 48 29</a>
           </p>
           <p className={styles.text}>
             <strong>Email : </strong>Bats.services19@gmail.com

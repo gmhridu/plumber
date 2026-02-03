@@ -19,12 +19,12 @@ export default function Header() {
         </Link>
 
         <div className={styles.ctaContainer}>
-          <a href="tel:0620202084" className={styles.phoneLink}>
+          <a href="tel:06 65 91 48 29" className={styles.phoneLink}>
             <span className={styles.phoneLabel}>Disponible 24/7</span>
-            <span className={styles.phoneNumber}>06 20 20 20 84</span>
+            <span className={styles.phoneNumber}>06 65 91 48 29</span>
           </a>
           <PhoneCTA
-            phoneNumber="0620202084"
+            phoneNumber="06 65 91 48 29"
             className={styles.callBtn}
             variant="primary"
           />

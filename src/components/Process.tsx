@@ -3,7 +3,7 @@ import styles from './Process.module.css';
 const steps = [
   {
     title: '1. Appelez-nous',
-    description: 'Contactez le 06 20 20 20 84. Un expert évalue votre urgence immédiatement.',
+    description: 'Contactez le 06 65 91 48 29. Un expert évalue votre urgence immédiatement.',
     icon: '📞',
   },
   {

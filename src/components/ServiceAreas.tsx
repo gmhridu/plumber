@@ -45,7 +45,7 @@ export default function ServiceAreas() {
           <p className={styles.ctaText}>
             Votre commune n&apos;est pas listée ? Contactez-nous pour vérifier notre disponibilité.
           </p>
-          <a href="tel:0620202084" className="btn btn-primary">
+          <a href="tel:06 65 91 48 29" className="btn btn-primary">
             Vérifier ma zone
           </a>
         </div>

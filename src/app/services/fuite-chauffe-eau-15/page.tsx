@@ -26,9 +26,9 @@ export default function ServicePage() {
               Spécialiste du dépannage de chauffe-eau en urgence. Fuite, panne de résistance ou thermostat, nous intervenons immédiatement.
             </p>
             <div className={styles.ctaBox}>
-              <a href="tel:0620202084" className="btn btn-primary">
+              <a href="tel:06 65 91 48 29" className="btn btn-primary">
                 <Phone size={24} />
-                Appel d&apos;Urgence : 06 20 20 20 84
+                Appel d&apos;Urgence : 06 65 91 48 29
               </a>
             </div>
           </div>

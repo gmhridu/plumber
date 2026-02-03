@@ -26,9 +26,9 @@ export default function ServicePage() {
               WC bouché à Levallois-Perret ? Pas de panique. Nos dépanneurs interviennent immédiatement pour un dégorgement efficace.
             </p>
             <div className={styles.ctaBox}>
-              <a href="tel:0620202084" className="btn btn-primary">
+              <a href="tel:06 65 91 48 29" className="btn btn-primary">
                 <Phone size={24} />
-                Débouchage Immédiat : 06 20 20 20 84
+                Débouchage Immédiat : 06 65 91 48 29
               </a>
             </div>
           </div>

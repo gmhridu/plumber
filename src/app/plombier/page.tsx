@@ -113,10 +113,10 @@ export default function PlombierPage() {
             {/* Strong CTA */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:0620202084"
+                href="tel:06 65 91 48 29"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transform transition hover:scale-105 flex items-center gap-2"
               >
-                📞 06 20 20 20 84
+                📞 06 65 91 48 29
               </a>
               <a
                 href="#contact"
@@ -270,10 +270,10 @@ export default function PlombierPage() {
               Intervention rapide garantie. Devis gratuit et sans engagement.
             </p>
             <a
-              href="tel:0620202084"
+              href="tel:06 65 91 48 29"
               className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-12 rounded-full text-lg shadow-lg transform transition hover:scale-105"
             >
-              📞 Appeler le 06 20 20 20 84
+              📞 Appeler le 06 65 91 48 29
             </a>
           </section>
         </div>

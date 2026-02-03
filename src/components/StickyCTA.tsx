@@ -6,7 +6,7 @@ export default function StickyCTA() {
   return (
     <div className={styles.stickyBar}>
       <PhoneCTA
-        phoneNumber="0620202084"
+        phoneNumber="06 65 91 48 29"
         className={styles.callButton}
       />
     </div>

@@ -20,7 +20,7 @@ export default function Hero() {
 
         <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
           <PhoneCTA
-            phoneNumber="0620202084"
+            phoneNumber="06 65 91 48 29"
             className={styles.ctaButton}
           />
         </div>

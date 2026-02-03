@@ -10,7 +10,7 @@ export default function LeakRepairPage() {
   const faq = [
     {
       question: "Que faire en cas de fuite d'eau importante ?",
-      answer: "Coupez immédiatement l'arrivée d'eau générale et appelez-nous au 06 20 20 20 84. Nous arrivons en 30 minutes."
+      answer: "Coupez immédiatement l'arrivée d'eau générale et appelez-nous au 06 65 91 48 29. Nous arrivons en 30 minutes."
     },
     {
       question: "Êtes-vous agréé par les assurances ?",

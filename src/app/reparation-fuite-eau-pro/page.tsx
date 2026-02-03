@@ -88,10 +88,10 @@ export default function ReparationFuiteEauPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:0620202084"
+                href="tel:06 65 91 48 29"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transform transition hover:scale-105 flex items-center gap-2"
               >
-                💧 06 20 20 20 84
+                💧 06 65 91 48 29
               </a>
               <a
                 href="#fuite"
@@ -241,10 +241,10 @@ export default function ReparationFuiteEauPage() {
               Détection gratuite, réparation garantie. Économisez sur votre facture d&apos;eau.
             </p>
             <a
-              href="tel:0620202084"
+              href="tel:06 65 91 48 29"
               className="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-12 rounded-full text-lg shadow-lg transform transition hover:scale-105"
             >
-              💧 06 20 20 20 84
+              💧 06 65 91 48 29
             </a>
           </section>
         </div>
