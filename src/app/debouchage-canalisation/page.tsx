@@ -22,6 +22,8 @@ export default function DrainUnblockingPage() {
     }
   ];
 
+  // Ok
+
   return (
     <ServicePage
       title="Débouchage Canalisation – Intervention 24/7"
